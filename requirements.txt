@@ -1,4 +1,5 @@
 tensorflow
+librosa
 pandas
 numpy
 notebook

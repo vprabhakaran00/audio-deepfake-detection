@@ -1,0 +1,79 @@
+2024-04-26 15:19:29,572 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-04-26 15:19:29,577 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-04-26 15:19:29,577 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-04-26 15:27:25,568 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-04-26 15:27:25,570 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-04-26 15:27:25,571 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-04-26 15:27:25,572 - common.py - INFO - Directory 'artifacts/data_ingestion' created successfully or already exists.
+2024-04-26 15:37:29,298 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-04-26 15:37:29,300 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-04-26 15:37:29,301 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-04-26 15:37:29,302 - common.py - INFO - Directory 'artifacts/data_ingestion' created successfully or already exists.
+2024-04-26 15:39:27,281 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-04-26 15:39:27,283 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-04-26 15:39:27,284 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-04-26 15:39:27,285 - common.py - INFO - Directory 'artifacts/data_ingestion' created successfully or already exists.
+2024-04-26 15:45:55,662 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-04-26 15:45:55,664 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-04-26 15:45:55,664 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-04-26 15:45:55,666 - common.py - INFO - Directory 'artifacts/data_ingestion' created successfully or already exists.
+2024-04-26 15:47:50,567 - 1264272460.py - INFO - Downloaded artifacts/data_ingestion/data.zip with the following info:
+X-GUploader-UploadID: ABPtcPpc5gMF9Rw8SyRi0r2X42RrEewX--HaDbgSxES_ffZX77ibEXbF08mZ_56c1n58_MPx3gC0kzLhCQ
+Expires: Fri, 26 Apr 2024 22:45:55 GMT
+Date: Fri, 26 Apr 2024 22:45:55 GMT
+Cache-Control: private, max-age=0
+Last-Modified: Thu, 24 Aug 2023 13:24:58 GMT
+ETag: "4963755b04520b3b4931da5c3cab6c49"
+x-goog-generation: 1692883498228830
+x-goog-metageneration: 1
+x-goog-stored-content-encoding: identity
+x-goog-stored-content-length: 3954601429
+Content-Type: application/zip
+x-goog-hash: crc32c=gyVr1g==
+x-goog-hash: md5=SWN1WwRSCztJMdpcPKtsSQ==
+x-goog-storage-class: MULTI_REGIONAL
+Accept-Ranges: bytes
+Content-Length: 3954601429
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Type
+Access-Control-Expose-Headers: User-Agent
+Server: UploadServer
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Connection: close
+
+
+2024-04-26 15:48:18,846 - 1264272460.py - INFO - Extracted file 'artifacts/data_ingestion/data.zip' to artifacts/data_ingestion
+2024-04-26 16:17:09,390 - main.py - INFO - >>>>>>> Data Ingestion Stage started <<<<<<<
+2024-04-26 16:17:09,395 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-04-26 16:17:09,395 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-04-26 16:17:09,395 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-04-26 16:17:09,395 - common.py - INFO - Directory 'artifacts/data_ingestion' created successfully or already exists.
+2024-04-26 16:19:21,139 - data_ingestion.py - INFO - Downloaded artifacts/data_ingestion/data.zip with the following info:
+X-GUploader-UploadID: ABPtcPo20pWsLQVi0uIq0vNXykgIAN7RtAPCUQ_xb5hJVAy_6DxdROKgKeOYJj80bJ43SyxpU8qrBqk2ag
+Expires: Fri, 26 Apr 2024 23:17:09 GMT
+Date: Fri, 26 Apr 2024 23:17:09 GMT
+Cache-Control: private, max-age=0
+Last-Modified: Thu, 24 Aug 2023 13:24:58 GMT
+ETag: "4963755b04520b3b4931da5c3cab6c49"
+x-goog-generation: 1692883498228830
+x-goog-metageneration: 1
+x-goog-stored-content-encoding: identity
+x-goog-stored-content-length: 3954601429
+Content-Type: application/zip
+x-goog-hash: crc32c=gyVr1g==
+x-goog-hash: md5=SWN1WwRSCztJMdpcPKtsSQ==
+x-goog-storage-class: MULTI_REGIONAL
+Accept-Ranges: bytes
+Content-Length: 3954601429
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Type
+Access-Control-Expose-Headers: User-Agent
+Server: UploadServer
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Connection: close
+
+
+2024-04-26 16:19:49,206 - data_ingestion.py - INFO - Extracted file 'artifacts/data_ingestion/data.zip' to artifacts/data_ingestion
+2024-04-26 16:19:49,206 - main.py - INFO - >>>>>>> Data Ingestion Stage completed <<<<<<<
+
+====================
