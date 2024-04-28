@@ -79,7 +79,7 @@ def write_to_json(data: dict, path: Path):
             json.dump(data, f, indent = 4)
         logger.info(f"Data successfully written and saved to JSON file: '{path}'.")
     except Exception as e:
-        logger.exception(f"Error writing data to JSON file: '{file}': {e}")
+        logger.exception(f"Error writing data to JSON file: '{path}': {e}")
         raise
     
 @ensure_annotations

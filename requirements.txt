@@ -1,13 +1,14 @@
 tensorflow
+tensorflow-io
 librosa
 pandas
 numpy
+scikit-learn
 notebook
 matplotlib
 seaborn
 dvc
 joblib
-tqdm
 python-box
 pyYAML
 types-PyYAML
