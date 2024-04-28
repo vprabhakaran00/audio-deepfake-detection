@@ -95,7 +95,7 @@ def get_file_size(file_path: Path) -> str:
     """
     try:
         if os.path.exists(file_path) and os.path.isfile(file_path):
-            size_in_kb = round(os.file.getsize(file_path)/1024, 2)
+            size_in_kb = round(os.path.getsize(file_path)/1024, 2)
             return f" - {size_in_kb} KB"
         else:
             logger.error(f"File {file_path} not found or is not a regular file.")
