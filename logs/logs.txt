@@ -1,13 +1,11 @@
-2024-04-27 19:52:03,552 - main.py - INFO - >>>>>>> Data Ingestion Stage started <<<<<<<
-2024-04-27 19:52:03,552 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
-2024-04-27 19:52:03,552 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
-2024-04-27 19:52:03,557 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
-2024-04-27 19:52:03,557 - common.py - INFO - Directory 'artifacts/data_ingestion' created successfully or already exists.
-2024-04-27 19:52:03,560 - common.py - INFO - Directory 'artifacts/data_transformation' created successfully or already exists.
-2024-04-27 19:55:06,078 - data_ingestion.py - INFO - Downloaded artifacts/data_ingestion/data.zip with the following info:
-X-GUploader-UploadID: ABPtcPoI4FmtqcE0deYNlGIoYPj2IJVUarZNEJhPk-BQI5ma9xn3kfEoHnWvt8lTiRSm9nuylsE
-Expires: Sun, 28 Apr 2024 02:52:02 GMT
-Date: Sun, 28 Apr 2024 02:52:02 GMT
+2024-04-27 22:26:16,565 - main.py - INFO - >>>>>>> Data Ingestion Stage started <<<<<<<
+2024-04-27 22:26:16,565 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-04-27 22:26:16,565 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-04-27 22:26:16,565 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-04-27 22:26:16,570 - common.py - INFO - Directory 'artifacts/data_ingestion' created successfully or already exists.
+2024-04-27 22:28:59,461 - data_ingestion.py - INFO - Downloaded artifacts/data_ingestion/data.zip with the following info:
+Expires: Sun, 28 Apr 2024 05:26:15 GMT
+Date: Sun, 28 Apr 2024 05:26:15 GMT
 Cache-Control: private, max-age=0
 Last-Modified: Thu, 24 Aug 2023 13:24:51 GMT
 ETag: "f3dcbfd84661c8dc3ff08c5b6e01877d"
@@ -24,26 +22,34 @@ Content-Length: 3956840339
 Access-Control-Allow-Origin: *
 Access-Control-Expose-Headers: Content-Type
 Access-Control-Expose-Headers: User-Agent
+X-GUploader-UploadID: ABPtcPoqumHz_HtWrUH4KIARTOfB4aD46d5pfYhIWhfmgDWKGB5Q_ZWuIH1V9Jy8V8ZQWtL0wnpmp3oXgA
 Server: UploadServer
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 Connection: close
 
 
-2024-04-27 19:55:33,495 - data_ingestion.py - INFO - Extracted file 'artifacts/data_ingestion/data.zip' to artifacts/data_ingestion
-2024-04-27 19:55:33,495 - main.py - INFO - >>>>>>> Data Ingestion Stage completed <<<<<<<
+2024-04-27 22:29:26,582 - data_ingestion.py - INFO - Extracted file 'artifacts/data_ingestion/data.zip' to artifacts/data_ingestion
+2024-04-27 22:29:26,583 - main.py - INFO - >>>>>>> Data Ingestion Stage completed <<<<<<<
 
 ====================
-2024-04-27 19:55:33,495 - main.py - INFO - >>>>>>> Data Loading and Transformation Stage started <<<<<<<
-2024-04-27 19:55:33,500 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
-2024-04-27 19:55:33,500 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
-2024-04-27 19:55:33,500 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
-2024-04-27 19:55:33,500 - common.py - INFO - Directory 'artifacts/data_ingestion' created successfully or already exists.
-2024-04-27 19:55:33,500 - common.py - INFO - Directory 'artifacts/data_transformation' created successfully or already exists.
-2024-04-27 19:56:27,512 - data_transformation.py - INFO - Split data and labels into training and test sets.
-2024-04-27 19:56:27,512 - data_transformation.py - INFO - Shape of X_train - (51, 257, 57813)
-2024-04-27 19:56:27,512 - data_transformation.py - INFO - Shape of X_test - (13, 257, 57813)
-2024-04-27 19:56:27,512 - data_transformation.py - INFO - Shape of y_train - (51,)
-2024-04-27 19:56:27,512 - data_transformation.py - INFO - Shape of y_test - (13,)
-2024-04-27 19:56:28,070 - main.py - INFO - >>>>>>> Data Loading and Transformation Stage completed <<<<<<<
+2024-04-27 22:29:26,583 - main.py - INFO - >>>>>>> Data Loading and Transformation Stage started <<<<<<<
+2024-04-27 22:29:26,586 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-04-27 22:29:26,587 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-04-27 22:29:26,588 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-04-27 22:29:26,589 - common.py - INFO - Directory 'artifacts/data_transformation' created successfully or already exists.
+2024-04-27 22:30:20,705 - data_transformation.py - INFO - Split data and labels into training and test sets.
+2024-04-27 22:30:20,705 - data_transformation.py - INFO - Shape of X_train - (51, 257, 57813)
+2024-04-27 22:30:20,705 - data_transformation.py - INFO - Shape of X_test - (13, 257, 57813)
+2024-04-27 22:30:20,706 - data_transformation.py - INFO - Shape of y_train - (51,)
+2024-04-27 22:30:20,706 - data_transformation.py - INFO - Shape of y_test - (13,)
+2024-04-27 22:30:21,246 - main.py - INFO - >>>>>>> Data Loading and Transformation Stage completed <<<<<<<
+
+====================
+2024-04-27 22:30:21,246 - main.py - INFO - >>>>>>> Data Validation Stage started <<<<<<<
+2024-04-27 22:30:21,246 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-04-27 22:30:21,246 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-04-27 22:30:21,251 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-04-27 22:30:21,252 - common.py - INFO - Directory 'artifacts/data_validation' created successfully or already exists.
+2024-04-27 22:30:21,253 - main.py - INFO - >>>>>>> Data Validation Stage completed <<<<<<<
 
 ====================

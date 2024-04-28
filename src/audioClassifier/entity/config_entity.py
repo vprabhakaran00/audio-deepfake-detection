@@ -15,3 +15,10 @@ class DataTransformationConfig:
     sampling_rate: int
     n_fft: int
     max_length: int
+    
+@dataclass(frozen=True)
+class DataValidationConfig:
+    root_dir: Path
+    data_path: Path
+    status_file: str
+    required_files: list

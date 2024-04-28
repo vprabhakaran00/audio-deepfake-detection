@@ -12,3 +12,9 @@ data_transformation:
   sampling_rate: 16000
   n_fft: 512
   max_length: 7400000
+
+data_validation:
+  root_dir: artifacts/data_validation
+  data_path: artifacts/data_transformation
+  status_file: artifacts/data_validation/status.txt
+  required_files: ['X_train.npy', 'X_test.npy', 'y_train.npy', 'y_test.npy']
