@@ -1,5 +1,6 @@
 tensorflow
 tensorflow-io
+imbalanced-learn
 librosa
 pandas
 numpy

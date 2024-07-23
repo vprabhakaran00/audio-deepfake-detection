@@ -1,1 +1,4 @@
-key: value
+metrics: ['accuracy', AUC(name='auc')]
+batch_size: 32
+epochs: 100
+learning_rate: 0.001

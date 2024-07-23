@@ -1,6 +1,6 @@
 from audioClassifier.constants import *
 from audioClassifier.utils.common import open_yaml_file, create_directories
-from audioClassifier.entity.config_entity import (DataIngestionConfig, DataTransformationConfig, DataValidationConfig)
+from audioClassifier.entity.config_entity import (DataIngestionConfig, DataTransformationConfig, DataValidationConfig, ModelPreparationConfig)
 
 class ConfigManager:
     def __init__(self, config_file = CONFIG_PATH, params_file = PARAMS_PATH):
@@ -33,9 +33,9 @@ class ConfigManager:
         data_trans_config = DataTransformationConfig(
             root_dir = data_trans.root_dir,
             data_path = data_trans.data_path,
-            sampling_rate = data_trans.sampling_rate,
             n_fft = data_trans.n_fft,
-            max_length = data_trans.max_length   
+            hop_length = data_trans.hop_length,
+            n_mels = data_trans.n_mels 
         )
         
         return data_trans_config
@@ -54,3 +54,19 @@ class ConfigManager:
         )
         
         return data_val_config
+    
+    
+    def read_model_prep_config(self) -> ModelPreparationConfig:
+        model_prep = self.config.model_preparation
+        
+        create_directories([self.config.model_preparation.root_dir])
+        
+        model_prep_config = ModelPreparationConfig(
+            root_dir = model_prep.root_dir,
+            base_model_path = model_prep.base_model_path,
+            updated_model_path = model_prep.updated_model_path,
+            metrics = self.params.metrics,
+            learning_rate = self.params.learning_rate   
+        )
+        
+        return model_prep_config

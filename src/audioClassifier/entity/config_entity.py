@@ -12,9 +12,9 @@ class DataIngestionConfig:
 class DataTransformationConfig:
     root_dir: Path
     data_path: Path
-    sampling_rate: int
     n_fft: int
-    max_length: int
+    hop_length: int
+    n_mels: int
     
 @dataclass(frozen=True)
 class DataValidationConfig:
@@ -22,3 +22,11 @@ class DataValidationConfig:
     data_path: Path
     status_file: str
     required_files: list
+    
+@dataclass(frozen=True)
+class ModelPreparationConfig:
+    root_dir: Path
+    base_model_path: Path
+    updated_model_path: int
+    metrics: list
+    learning_rate: float

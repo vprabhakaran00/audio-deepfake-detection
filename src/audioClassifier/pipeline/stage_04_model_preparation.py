@@ -1,23 +1,23 @@
 from audioClassifier.config.configuration import ConfigManager
-from audioClassifier.components.data_transformation import DataTransformation
+from audioClassifier.components.model_preparation import ModelPreparation
 from audioClassifier import logger
 
-STAGE_NAME = "Data Loading and Transformation Stage"
+STAGE_NAME = "Model Preparation Stage"
 
-class DataTransformationTrainingPipeline:
+class ModelPreparationTrainingPipeline:
     def __init__(self):
         pass
     
     def main(self):
         config = ConfigManager()
-        data_transformation_config = config.read_data_trans_config()
-        data_transformation = DataTransformation(config = data_transformation_config)
-        data_transformation.load_and_oversample()
+        model_preparation_config = config.read_model_prep_config()
+        model_preparation = ModelPreparation(config = model_preparation_config)
+        model_preparation.build_full_model()
         
 if __name__ == '__main__':
     try:
         logger.info(f">>>>>>> {STAGE_NAME} started <<<<<<<")
-        pipe = DataTransformationTrainingPipeline()
+        pipe = ModelPreparationTrainingPipeline()
         pipe.main()
         logger.info(f">>>>>>> {STAGE_NAME} completed <<<<<<<\n\n====================")
     except Exception as e:

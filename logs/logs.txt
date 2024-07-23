@@ -53,3 +53,97 @@ Connection: close
 2024-04-27 22:30:21,253 - main.py - INFO - >>>>>>> Data Validation Stage completed <<<<<<<
 
 ====================
+2024-05-02 14:58:57,987 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-05-02 14:58:57,994 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-05-02 14:58:57,995 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-05-02 14:58:57,996 - common.py - INFO - Directory 'artifacts/model_preparation' created successfully or already exists.
+2024-05-02 14:59:02,558 - 2867988300.py - INFO - ResNet50V2 Base Model built successfully and saved to artifacts/model_preparation/base_model.keras.
+2024-05-02 14:59:02,862 - 2867988300.py - ERROR - Error building and compiling updated model: 'ModelPreparationConfig' object has no attribute 'metric'
+2024-05-02 14:59:27,217 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-05-02 14:59:27,218 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-05-02 14:59:27,219 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-05-02 14:59:27,220 - common.py - INFO - Directory 'artifacts/model_preparation' created successfully or already exists.
+2024-05-02 14:59:29,034 - 2415474536.py - INFO - ResNet50V2 Base Model built successfully and saved to artifacts/model_preparation/base_model.keras.
+2024-05-02 14:59:29,352 - 2415474536.py - ERROR - Error building and compiling updated model: Invalid keyword argument(s) in `compile()`: ({'metric'},). Valid keyword arguments include "cloning", "experimental_run_tf_function", "distribute", "target_tensors", or "sample_weight_mode".
+2024-05-02 15:00:20,645 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-05-02 15:00:20,645 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-05-02 15:00:20,650 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-05-02 15:00:20,650 - common.py - INFO - Directory 'artifacts/model_preparation' created successfully or already exists.
+2024-05-02 15:00:22,449 - 1673267709.py - INFO - ResNet50V2 Base Model built successfully and saved to artifacts/model_preparation/base_model.keras.
+2024-05-02 15:00:23,518 - 1673267709.py - INFO - Updated Model compiled and saved at artifacts/model_preparation/updated_model.keras.
+2024-05-02 15:01:57,635 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-05-02 15:01:57,635 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-05-02 15:01:57,640 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-05-02 15:01:57,641 - common.py - INFO - Directory 'artifacts/data_transformation' created successfully or already exists.
+2024-05-02 15:02:49,962 - 3457268242.py - INFO - Split data and labels into training and test sets.
+2024-05-02 15:02:49,962 - 3457268242.py - INFO - Shape of X_train - (51, 257, 57813, 1)
+2024-05-02 15:02:49,963 - 3457268242.py - INFO - Shape of X_test - (13, 257, 57813, 1)
+2024-05-02 15:02:49,963 - 3457268242.py - INFO - Shape of y_train - (51,)
+2024-05-02 15:02:49,964 - 3457268242.py - INFO - Shape of y_test - (13,)
+2024-05-02 15:03:13,116 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-05-02 15:03:13,117 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-05-02 15:03:13,118 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-05-02 15:03:13,119 - common.py - INFO - Directory 'artifacts/model_preparation' created successfully or already exists.
+2024-05-02 15:03:14,889 - 1673267709.py - INFO - ResNet50V2 Base Model built successfully and saved to artifacts/model_preparation/base_model.keras.
+2024-05-02 15:03:15,904 - 1673267709.py - INFO - Updated Model compiled and saved at artifacts/model_preparation/updated_model.keras.
+2024-05-02 15:06:57,007 - optimizer.py - WARNING - Skipping variable loading for optimizer 'Adam', because it has 9 variables whereas the saved optimizer has 1 variables. 
+2024-05-02 16:01:34,585 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-05-02 16:01:34,585 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-05-02 16:01:34,590 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-05-02 16:01:34,590 - common.py - INFO - Directory 'artifacts/data_transformation' created successfully or already exists.
+2024-05-02 16:02:27,956 - 139380371.py - INFO - Split data and labels into training and test sets.
+2024-05-02 16:02:27,956 - 139380371.py - INFO - Shape of X_train - (51, 257, 57813)
+2024-05-02 16:02:27,956 - 139380371.py - INFO - Shape of X_test - (13, 257, 57813)
+2024-05-02 16:02:27,956 - 139380371.py - INFO - Shape of y_train - (51,)
+2024-05-02 16:02:27,956 - 139380371.py - INFO - Shape of y_test - (13,)
+2024-06-09 18:51:57,586 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-06-09 18:51:57,620 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-06-09 18:51:57,621 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-06-09 18:51:57,622 - common.py - INFO - Directory 'artifacts/data_transformation' created successfully or already exists.
+2024-06-09 18:53:07,397 - 3719677381.py - INFO - Split data and labels into training and test sets.
+2024-06-09 18:53:07,401 - 3719677381.py - INFO - Shape of X_train - (4178, 224, 224, 3)
+2024-06-09 18:53:07,401 - 3719677381.py - INFO - Shape of X_test - (597, 224, 224, 3)
+2024-06-09 18:53:07,402 - 3719677381.py - INFO - Shape of y_train - (4178,)
+2024-06-09 18:53:07,402 - 3719677381.py - INFO - Shape of y_test - (597,)
+2024-06-09 18:53:56,298 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-06-09 18:53:56,301 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-06-09 18:53:56,304 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-06-09 18:53:56,305 - common.py - INFO - Directory 'artifacts/data_transformation' created successfully or already exists.
+2024-06-09 18:55:08,462 - 484366427.py - INFO - Class distribution after resampling: {0: 2089, 1: 2089}
+2024-06-09 18:55:12,514 - 484366427.py - INFO - Split data and labels into training and test sets.
+2024-06-09 18:55:12,515 - 484366427.py - INFO - Shape of X_train - (4178, 224, 224, 3)
+2024-06-09 18:55:12,516 - 484366427.py - INFO - Shape of X_test - (597, 224, 224, 3)
+2024-06-09 18:55:12,516 - 484366427.py - INFO - Shape of y_train - (4178,)
+2024-06-09 18:55:12,516 - 484366427.py - INFO - Shape of y_test - (597,)
+2024-06-09 19:11:25,256 - main.py - INFO - >>>>>>> Data Ingestion Stage started <<<<<<<
+2024-06-09 19:11:25,259 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-06-09 19:11:25,260 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-06-09 19:11:25,260 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-06-09 19:11:25,260 - common.py - INFO - Directory 'artifacts/data_ingestion' created successfully or already exists.
+2024-06-09 19:11:25,261 - data_ingestion.py - INFO - File already exists of size:  - 3864101.89 KB
+2024-06-09 19:11:51,980 - data_ingestion.py - INFO - Extracted file 'artifacts/data_ingestion/data.zip' to artifacts/data_ingestion
+2024-06-09 19:11:51,981 - main.py - INFO - >>>>>>> Data Ingestion Stage completed <<<<<<<
+
+====================
+2024-06-09 19:11:51,981 - main.py - INFO - >>>>>>> Data Loading and Transformation Stage started <<<<<<<
+2024-06-09 19:11:51,984 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-06-09 19:11:51,984 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-06-09 19:11:51,985 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-06-09 19:11:51,985 - common.py - INFO - Directory 'artifacts/data_transformation' created successfully or already exists.
+2024-06-09 19:12:50,669 - data_transformation.py - INFO - Class distribution after resampling: {0: 2089, 1: 2089}
+2024-06-09 19:12:54,656 - data_transformation.py - INFO - Split data and labels into training and test sets.
+2024-06-09 19:12:54,657 - data_transformation.py - INFO - Shape of X_train - (4178, 224, 224, 3)
+2024-06-09 19:12:54,657 - data_transformation.py - INFO - Shape of X_test - (597, 224, 224, 3)
+2024-06-09 19:12:54,657 - data_transformation.py - INFO - Shape of y_train - (4178,)
+2024-06-09 19:12:54,657 - data_transformation.py - INFO - Shape of y_test - (597,)
+2024-06-09 19:12:55,555 - main.py - INFO - >>>>>>> Data Loading and Transformation Stage completed <<<<<<<
+
+====================
+2024-06-09 19:12:55,559 - main.py - INFO - >>>>>>> Data Validation Stage started <<<<<<<
+2024-06-09 19:12:55,562 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-06-09 19:12:55,563 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-06-09 19:12:55,563 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-06-09 19:12:55,564 - common.py - INFO - Directory 'artifacts/data_validation' created successfully or already exists.
+2024-06-09 19:12:55,564 - main.py - INFO - >>>>>>> Data Validation Stage completed <<<<<<<
+
+====================

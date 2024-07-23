@@ -9,12 +9,17 @@ data_ingestion:
 data_transformation:
   root_dir: artifacts/data_transformation
   data_path: artifacts/data_ingestion/KAGGLE/AUDIO
-  sampling_rate: 16000
-  n_fft: 512
-  max_length: 7400000
+  n_fft: 2048
+  hop_length: 512
+  n_mels: 128
 
 data_validation:
   root_dir: artifacts/data_validation
   data_path: artifacts/data_transformation
   status_file: artifacts/data_validation/status.txt
   required_files: ['X_train.npy', 'X_test.npy', 'y_train.npy', 'y_test.npy']
+
+model_preparation:
+  root_dir: artifacts/model_preparation
+  base_model_path: artifacts/model_preparation/base_model.keras
+  updated_model_path: artifacts/model_preparation/updated_model.keras
