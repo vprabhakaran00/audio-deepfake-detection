@@ -2,3 +2,5 @@ metrics: ['accuracy', AUC(name='auc')]
 batch_size: 32
 epochs: 100
 learning_rate: 0.001
+early_stopping_monitor: 'val_auc'
+early_stopping_patience: 3

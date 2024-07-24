@@ -1,6 +1,7 @@
+import os
 from audioClassifier.constants import *
 from audioClassifier.utils.common import open_yaml_file, create_directories
-from audioClassifier.entity.config_entity import (DataIngestionConfig, DataTransformationConfig, DataValidationConfig, ModelPreparationConfig)
+from audioClassifier.entity.config_entity import (DataIngestionConfig, DataTransformationConfig, DataValidationConfig, ModelPreparationConfig, CallbackPreparationConfig)
 
 class ConfigManager:
     def __init__(self, config_file = CONFIG_PATH, params_file = PARAMS_PATH):
@@ -70,3 +71,20 @@ class ConfigManager:
         )
         
         return model_prep_config
+    
+    
+    def read_callback_prep_config(self) -> CallbackPreparationConfig:
+        callback_prep = self.config.callback_preparation
+        
+        checkpoint_dir = os.path.dirname(callback_prep.model_checkpoint_path)
+        create_directories([checkpoint_dir, self.config.callback_preparation.tensorboard_log_dir])
+        
+        callback_prep_config = CallbackPreparationConfig(
+            root_dir = callback_prep.root_dir,
+            tensorboard_log_dir = callback_prep.tensorboard_log_dir,
+            model_checkpoint_path = callback_prep.model_checkpoint_path,
+            early_stopping_monitor = self.params.early_stopping_monitor,
+            early_stopping_patience = self.params.early_stopping_patience 
+        )
+        
+        return callback_prep_config

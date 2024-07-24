@@ -147,3 +147,51 @@ Connection: close
 2024-06-09 19:12:55,564 - main.py - INFO - >>>>>>> Data Validation Stage completed <<<<<<<
 
 ====================
+2024-07-21 16:01:55,425 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-21 16:01:55,432 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-21 16:01:55,433 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-21 16:01:55,434 - common.py - INFO - Directory 'artifacts/model_preparation' created successfully or already exists.
+2024-07-21 16:01:57,058 - 2677028105.py - INFO - MobileNetV3Large Base Model built successfully and saved to artifacts/model_preparation/base_model.keras.
+2024-07-21 16:01:58,033 - 2677028105.py - INFO - Updated Model compiled and saved at artifacts/model_preparation/updated_model.keras.
+2024-07-22 20:46:01,996 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-22 20:46:02,003 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-22 20:46:02,004 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-22 20:46:02,005 - common.py - INFO - Directory 'artifacts/callback_preparation' created successfully or already exists.
+2024-07-22 20:46:02,006 - common.py - INFO - Directory 'artifacts/callback_preparation' created successfully or already exists.
+2024-07-22 20:52:39,447 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-22 20:52:39,449 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-22 20:52:39,450 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-22 20:52:39,450 - common.py - INFO - Directory 'artifacts/callback_preparation' created successfully or already exists.
+2024-07-22 20:52:39,451 - common.py - INFO - Directory 'artifacts/callback_preparation' created successfully or already exists.
+2024-07-22 20:54:51,151 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-22 20:54:51,153 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-22 20:54:51,154 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-22 20:54:51,155 - common.py - INFO - Directory 'artifacts/callback_preparation' created successfully or already exists.
+2024-07-22 20:54:51,156 - common.py - INFO - Directory 'artifacts/callback_preparation' created successfully or already exists.
+2024-07-22 21:00:49,216 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-22 21:00:49,217 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-22 21:00:49,218 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-22 21:00:49,219 - common.py - INFO - Directory 'artifacts/callback_preparation' created successfully or already exists.
+2024-07-22 21:00:49,220 - common.py - INFO - Directory 'artifacts/callback_preparation' created successfully or already exists.
+2024-07-22 21:01:04,126 - common.py - ERROR - File config\config.yaml not found.
+2024-07-22 21:01:29,275 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-22 21:01:29,277 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-22 21:01:29,278 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-22 21:01:29,282 - common.py - INFO - Directory 'artifacts/callback_preparation' created successfully or already exists.
+2024-07-22 21:01:29,283 - common.py - INFO - Directory 'artifacts/callback_preparation' created successfully or already exists.
+2024-07-22 21:06:28,611 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-22 21:06:28,613 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-22 21:06:28,614 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-22 21:06:28,614 - common.py - INFO - Directory 'artifacts/callback_preparation' created successfully or already exists.
+2024-07-22 21:06:28,615 - common.py - INFO - Directory 'artifacts/callback_preparation' created successfully or already exists.
+2024-07-22 21:07:42,223 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-22 21:07:42,225 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-22 21:07:42,226 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-22 21:07:42,230 - common.py - INFO - Directory 'artifacts/callback_preparation/checkpoint_dir' created successfully or already exists.
+2024-07-22 21:07:42,231 - common.py - INFO - Directory 'artifacts/callback_preparation' created successfully or already exists.
+2024-07-22 21:09:37,161 - common.py - ERROR - File config\config.yaml not found.
+2024-07-22 21:09:49,244 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-22 21:09:49,246 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-22 21:09:49,247 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-22 21:09:49,251 - common.py - INFO - Directory 'artifacts/callback_preparation/checkpoint_dir' created successfully or already exists.
+2024-07-22 21:09:49,251 - common.py - INFO - Directory 'artifacts/callback_preparation/tensorboard_log_dir' created successfully or already exists.

@@ -30,3 +30,11 @@ class ModelPreparationConfig:
     updated_model_path: int
     metrics: list
     learning_rate: float
+    
+@dataclass(frozen=True)
+class CallbackPreparationConfig:
+    root_dir: Path
+    tensorboard_log_dir: Path
+    model_checkpoint_path: Path
+    early_stopping_monitor: str
+    early_stopping_patience: int
