@@ -32,3 +32,7 @@ callback_preparation:
 model_training:
   root_dir: artifacts/model_training
   trained_model_dir: artifacts/model_training/model.keras
+
+model_evaluation:
+  root_dir: artifacts/model_evaluation
+  evaluation_results_dir: artifacts/model_evaluation/evaluation_scores.json

@@ -1383,3 +1383,289 @@ PermissionError: [Errno 13] Permission denied: 'artifacts\\callback_preparation\
 2024-07-24 18:58:58,592 - main.py - INFO - >>>>>>> Model Training Stage completed <<<<<<<
 
 ====================
+2024-07-25 10:41:45,930 - module_wrapper.py - WARNING - From d:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-07-25 10:51:51,669 - module_wrapper.py - WARNING - From d:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-07-25 10:51:52,287 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 10:51:52,297 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 10:51:52,298 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 10:51:52,299 - common.py - INFO - Directory 'artifacts/model_evaluation' created successfully or already exists.
+2024-07-25 10:51:53,022 - module_wrapper.py - WARNING - From d:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 10:51:53,291 - module_wrapper.py - WARNING - From d:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-25 10:52:01,186 - module_wrapper.py - WARNING - From d:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+2024-07-25 10:52:01,272 - module_wrapper.py - WARNING - From d:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 11:08:57,946 - module_wrapper.py - WARNING - From d:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-07-25 11:08:58,566 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:08:58,568 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:08:58,569 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:08:58,570 - common.py - INFO - Directory 'artifacts/model_evaluation' created successfully or already exists.
+2024-07-25 11:08:58,921 - module_wrapper.py - WARNING - From d:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 11:08:59,122 - module_wrapper.py - WARNING - From d:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-25 11:09:07,481 - module_wrapper.py - WARNING - From d:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+2024-07-25 11:09:07,537 - module_wrapper.py - WARNING - From d:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 11:09:12,434 - common.py - INFO - Data successfully written and saved to JSON file: 'artifacts\model_evaluation\evaluation_scores.json'.
+2024-07-25 11:09:12,435 - 1737105841.py - INFO - Model evaluated successfully and results saved to artifacts\model_evaluation\evaluation_scores.json.
+2024-07-25 11:19:02,206 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-07-25 11:19:02,772 - main.py - INFO - >>>>>>> Data Ingestion Stage started <<<<<<<
+2024-07-25 11:19:02,776 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:19:02,777 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:19:02,777 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:19:02,777 - common.py - INFO - Directory 'artifacts/data_ingestion' created successfully or already exists.
+2024-07-25 11:19:02,778 - data_ingestion.py - INFO - File already exists of size:  - 3864101.89 KB
+2024-07-25 11:19:26,447 - data_ingestion.py - INFO - Extracted file 'artifacts\data_ingestion\data.zip' to artifacts\data_ingestion
+2024-07-25 11:19:26,447 - main.py - INFO - >>>>>>> Data Ingestion Stage completed <<<<<<<
+
+====================
+2024-07-25 11:19:26,448 - main.py - INFO - >>>>>>> Data Loading and Transformation Stage started <<<<<<<
+2024-07-25 11:19:26,451 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:19:26,452 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:19:26,452 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:19:26,453 - common.py - INFO - Directory 'artifacts/data_transformation' created successfully or already exists.
+2024-07-25 11:20:21,349 - data_transformation.py - INFO - Class distribution after resampling: {0: 2089, 1: 2089}
+2024-07-25 11:20:25,341 - data_transformation.py - INFO - Split data and labels into training and test sets.
+2024-07-25 11:20:25,341 - data_transformation.py - INFO - Shape of X_train - (4178, 224, 224, 3)
+2024-07-25 11:20:25,341 - data_transformation.py - INFO - Shape of X_test - (597, 224, 224, 3)
+2024-07-25 11:20:25,341 - data_transformation.py - INFO - Shape of y_train - (4178,)
+2024-07-25 11:20:25,342 - data_transformation.py - INFO - Shape of y_test - (597,)
+2024-07-25 11:20:26,216 - main.py - INFO - >>>>>>> Data Loading and Transformation Stage completed <<<<<<<
+
+====================
+2024-07-25 11:20:26,216 - main.py - INFO - >>>>>>> Data Validation Stage started <<<<<<<
+2024-07-25 11:20:26,220 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:20:26,221 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:20:26,222 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:20:26,222 - common.py - INFO - Directory 'artifacts/data_validation' created successfully or already exists.
+2024-07-25 11:20:26,223 - main.py - INFO - >>>>>>> Data Validation Stage completed <<<<<<<
+
+====================
+2024-07-25 11:20:26,223 - main.py - INFO - >>>>>>> Model Preparation Stage started <<<<<<<
+2024-07-25 11:20:26,226 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:20:26,227 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:20:26,228 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:20:26,228 - common.py - INFO - Directory 'artifacts/model_preparation' created successfully or already exists.
+2024-07-25 11:20:26,259 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 11:20:26,317 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-25 11:20:27,961 - model_preparation.py - INFO - MobileNetV3Large Base Model built successfully and saved to artifacts\model_preparation\base_model.keras.
+2024-07-25 11:20:28,808 - model_preparation.py - INFO - Updated Model compiled and saved to artifacts\model_preparation\updated_model.keras.
+2024-07-25 11:20:28,809 - main.py - INFO - >>>>>>> Model Preparation Stage completed <<<<<<<
+
+====================
+2024-07-25 11:20:28,809 - main.py - INFO - >>>>>>> Model Training Stage started <<<<<<<
+2024-07-25 11:20:28,812 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:20:28,813 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:20:28,814 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:20:28,814 - common.py - INFO - Directory 'artifacts/callback_preparation/checkpoint_dir' created successfully or already exists.
+2024-07-25 11:20:28,815 - common.py - INFO - Directory 'artifacts/callback_preparation/tensorboard_log_dir' created successfully or already exists.
+2024-07-25 11:20:28,816 - common.py - INFO - Directory 'artifacts/model_training' created successfully or already exists.
+2024-07-25 11:20:35,256 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+2024-07-25 11:20:35,738 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 11:22:27,057 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-07-25 11:22:27,722 - main.py - INFO - >>>>>>> Data Ingestion Stage started <<<<<<<
+2024-07-25 11:22:27,726 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:22:27,727 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:22:27,727 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:22:27,727 - common.py - INFO - Directory 'artifacts/data_ingestion' created successfully or already exists.
+2024-07-25 11:22:27,728 - data_ingestion.py - INFO - File already exists of size:  - 3864101.89 KB
+2024-07-25 11:22:51,337 - data_ingestion.py - INFO - Extracted file 'artifacts\data_ingestion\data.zip' to artifacts\data_ingestion
+2024-07-25 11:22:51,337 - main.py - INFO - >>>>>>> Data Ingestion Stage completed <<<<<<<
+
+====================
+2024-07-25 11:22:51,337 - main.py - INFO - >>>>>>> Data Loading and Transformation Stage started <<<<<<<
+2024-07-25 11:22:51,340 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:22:51,341 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:22:51,342 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:22:51,342 - common.py - INFO - Directory 'artifacts/data_transformation' created successfully or already exists.
+2024-07-25 11:23:45,298 - data_transformation.py - INFO - Class distribution after resampling: {0: 2089, 1: 2089}
+2024-07-25 11:23:49,146 - data_transformation.py - INFO - Split data and labels into training and test sets.
+2024-07-25 11:23:49,146 - data_transformation.py - INFO - Shape of X_train - (4178, 224, 224, 3)
+2024-07-25 11:23:49,146 - data_transformation.py - INFO - Shape of X_test - (597, 224, 224, 3)
+2024-07-25 11:23:49,147 - data_transformation.py - INFO - Shape of y_train - (4178,)
+2024-07-25 11:23:49,147 - data_transformation.py - INFO - Shape of y_test - (597,)
+2024-07-25 11:23:50,034 - main.py - INFO - >>>>>>> Data Loading and Transformation Stage completed <<<<<<<
+
+====================
+2024-07-25 11:23:50,035 - main.py - INFO - >>>>>>> Data Validation Stage started <<<<<<<
+2024-07-25 11:23:50,038 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:23:50,039 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:23:50,039 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:23:50,040 - common.py - INFO - Directory 'artifacts/data_validation' created successfully or already exists.
+2024-07-25 11:23:50,040 - main.py - INFO - >>>>>>> Data Validation Stage completed <<<<<<<
+
+====================
+2024-07-25 11:23:50,041 - main.py - INFO - >>>>>>> Model Preparation Stage started <<<<<<<
+2024-07-25 11:23:50,043 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:23:50,044 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:23:50,045 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:23:50,045 - common.py - INFO - Directory 'artifacts/model_preparation' created successfully or already exists.
+2024-07-25 11:23:50,056 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 11:23:50,112 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-25 11:23:51,739 - model_preparation.py - INFO - MobileNetV3Large Base Model built successfully and saved to artifacts\model_preparation\base_model.keras.
+2024-07-25 11:23:52,596 - model_preparation.py - INFO - Updated Model compiled and saved to artifacts\model_preparation\updated_model.keras.
+2024-07-25 11:23:52,597 - main.py - INFO - >>>>>>> Model Preparation Stage completed <<<<<<<
+
+====================
+2024-07-25 11:23:52,597 - main.py - INFO - >>>>>>> Model Training Stage started <<<<<<<
+2024-07-25 11:23:52,600 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:23:52,601 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:23:52,601 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:23:52,602 - common.py - INFO - Directory 'artifacts/callback_preparation/checkpoint_dir' created successfully or already exists.
+2024-07-25 11:23:52,602 - common.py - INFO - Directory 'artifacts/callback_preparation/tensorboard_log_dir' created successfully or already exists.
+2024-07-25 11:23:52,603 - common.py - INFO - Directory 'artifacts/model_training' created successfully or already exists.
+2024-07-25 11:23:59,061 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+2024-07-25 11:23:59,525 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 11:28:21,052 - model_training.py - INFO - Model trained successfully and saved to artifacts\model_training\model.keras.
+2024-07-25 11:28:21,441 - main.py - INFO - >>>>>>> Model Training Stage completed <<<<<<<
+
+====================
+2024-07-25 11:31:28,421 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-07-25 11:31:29,700 - main.py - INFO - >>>>>>> Data Ingestion Stage started <<<<<<<
+2024-07-25 11:31:29,708 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:31:29,713 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:31:29,714 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:31:29,714 - common.py - INFO - Directory 'artifacts/data_ingestion' created successfully or already exists.
+2024-07-25 11:31:29,714 - data_ingestion.py - INFO - File already exists of size:  - 3864101.89 KB
+2024-07-25 11:31:53,278 - data_ingestion.py - INFO - Extracted file 'artifacts\data_ingestion\data.zip' to artifacts\data_ingestion
+2024-07-25 11:31:53,279 - main.py - INFO - >>>>>>> Data Ingestion Stage completed <<<<<<<
+
+====================
+2024-07-25 11:31:53,279 - main.py - INFO - >>>>>>> Data Loading and Transformation Stage started <<<<<<<
+2024-07-25 11:31:53,282 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:31:53,283 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:31:53,283 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:31:53,284 - common.py - INFO - Directory 'artifacts/data_transformation' created successfully or already exists.
+2024-07-25 11:32:48,329 - data_transformation.py - INFO - Class distribution after resampling: {0: 2089, 1: 2089}
+2024-07-25 11:32:52,299 - data_transformation.py - INFO - Split data and labels into training and test sets.
+2024-07-25 11:32:52,299 - data_transformation.py - INFO - Shape of X_train - (4178, 224, 224, 3)
+2024-07-25 11:32:52,299 - data_transformation.py - INFO - Shape of X_test - (597, 224, 224, 3)
+2024-07-25 11:32:52,299 - data_transformation.py - INFO - Shape of y_train - (4178,)
+2024-07-25 11:32:52,300 - data_transformation.py - INFO - Shape of y_test - (597,)
+2024-07-25 11:32:53,187 - main.py - INFO - >>>>>>> Data Loading and Transformation Stage completed <<<<<<<
+
+====================
+2024-07-25 11:32:53,188 - main.py - INFO - >>>>>>> Data Validation Stage started <<<<<<<
+2024-07-25 11:32:53,195 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:32:53,196 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:32:53,196 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:32:53,197 - common.py - INFO - Directory 'artifacts/data_validation' created successfully or already exists.
+2024-07-25 11:32:53,197 - main.py - INFO - >>>>>>> Data Validation Stage completed <<<<<<<
+
+====================
+2024-07-25 11:32:53,197 - main.py - INFO - >>>>>>> Model Preparation Stage started <<<<<<<
+2024-07-25 11:32:53,200 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:32:53,201 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:32:53,202 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:32:53,202 - common.py - INFO - Directory 'artifacts/model_preparation' created successfully or already exists.
+2024-07-25 11:32:53,247 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 11:32:53,335 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-25 11:32:54,972 - model_preparation.py - INFO - MobileNetV3Large Base Model built successfully and saved to artifacts\model_preparation\base_model.keras.
+2024-07-25 11:32:55,809 - model_preparation.py - INFO - Updated Model compiled and saved to artifacts\model_preparation\updated_model.keras.
+2024-07-25 11:32:55,810 - main.py - INFO - >>>>>>> Model Preparation Stage completed <<<<<<<
+
+====================
+2024-07-25 11:32:55,810 - main.py - INFO - >>>>>>> Model Training Stage started <<<<<<<
+2024-07-25 11:32:55,813 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:32:55,814 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:32:55,814 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:32:55,815 - common.py - INFO - Directory 'artifacts/callback_preparation/checkpoint_dir' created successfully or already exists.
+2024-07-25 11:32:55,815 - common.py - INFO - Directory 'artifacts/callback_preparation/tensorboard_log_dir' created successfully or already exists.
+2024-07-25 11:32:55,817 - common.py - INFO - Directory 'artifacts/model_training' created successfully or already exists.
+2024-07-25 11:33:02,281 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+2024-07-25 11:33:02,788 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 11:33:54,481 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-07-25 11:33:55,099 - main.py - INFO - >>>>>>> Data Ingestion Stage started <<<<<<<
+2024-07-25 11:33:55,103 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:33:55,104 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:33:55,105 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:33:55,105 - common.py - INFO - Directory 'artifacts/data_ingestion' created successfully or already exists.
+2024-07-25 11:33:55,106 - data_ingestion.py - INFO - File already exists of size:  - 3864101.89 KB
+2024-07-25 11:34:18,771 - data_ingestion.py - INFO - Extracted file 'artifacts\data_ingestion\data.zip' to artifacts\data_ingestion
+2024-07-25 11:34:18,772 - main.py - INFO - >>>>>>> Data Ingestion Stage completed <<<<<<<
+
+====================
+2024-07-25 11:34:18,772 - main.py - INFO - >>>>>>> Data Loading and Transformation Stage started <<<<<<<
+2024-07-25 11:34:18,775 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:34:18,776 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:34:18,777 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:34:18,777 - common.py - INFO - Directory 'artifacts/data_transformation' created successfully or already exists.
+2024-07-25 11:35:12,548 - data_transformation.py - INFO - Class distribution after resampling: {0: 2089, 1: 2089}
+2024-07-25 11:35:16,505 - data_transformation.py - INFO - Split data and labels into training and test sets.
+2024-07-25 11:35:16,506 - data_transformation.py - INFO - Shape of X_train - (4178, 224, 224, 3)
+2024-07-25 11:35:16,506 - data_transformation.py - INFO - Shape of X_test - (597, 224, 224, 3)
+2024-07-25 11:35:16,506 - data_transformation.py - INFO - Shape of y_train - (4178,)
+2024-07-25 11:35:16,506 - data_transformation.py - INFO - Shape of y_test - (597,)
+2024-07-25 11:35:17,341 - main.py - INFO - >>>>>>> Data Loading and Transformation Stage completed <<<<<<<
+
+====================
+2024-07-25 11:35:17,342 - main.py - INFO - >>>>>>> Data Validation Stage started <<<<<<<
+2024-07-25 11:35:17,345 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:35:17,347 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:35:17,347 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:35:17,347 - common.py - INFO - Directory 'artifacts/data_validation' created successfully or already exists.
+2024-07-25 11:35:17,348 - main.py - INFO - >>>>>>> Data Validation Stage completed <<<<<<<
+
+====================
+2024-07-25 11:35:17,348 - main.py - INFO - >>>>>>> Model Preparation Stage started <<<<<<<
+2024-07-25 11:35:17,351 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:35:17,352 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:35:17,352 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:35:17,353 - common.py - INFO - Directory 'artifacts/model_preparation' created successfully or already exists.
+2024-07-25 11:35:17,366 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 11:35:17,427 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-25 11:35:19,056 - model_preparation.py - INFO - MobileNetV3Large Base Model built successfully and saved to artifacts\model_preparation\base_model.keras.
+2024-07-25 11:35:19,882 - model_preparation.py - INFO - Updated Model compiled and saved to artifacts\model_preparation\updated_model.keras.
+2024-07-25 11:35:19,883 - main.py - INFO - >>>>>>> Model Preparation Stage completed <<<<<<<
+
+====================
+2024-07-25 11:35:19,883 - main.py - INFO - >>>>>>> Model Training Stage started <<<<<<<
+2024-07-25 11:35:19,886 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:35:19,887 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:35:19,888 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:35:19,888 - common.py - INFO - Directory 'artifacts/callback_preparation/checkpoint_dir' created successfully or already exists.
+2024-07-25 11:35:19,888 - common.py - INFO - Directory 'artifacts/callback_preparation/tensorboard_log_dir' created successfully or already exists.
+2024-07-25 11:35:19,890 - common.py - INFO - Directory 'artifacts/model_training' created successfully or already exists.
+2024-07-25 11:35:26,252 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+2024-07-25 11:35:26,718 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 11:39:41,071 - model_training.py - INFO - Model trained successfully and saved to artifacts\model_training\model.keras.
+2024-07-25 11:39:41,481 - main.py - INFO - >>>>>>> Model Training Stage completed <<<<<<<
+
+====================
+2024-07-25 11:39:41,482 - main.py - INFO - >>>>>>> Model Evaluation Stage started <<<<<<<
+2024-07-25 11:39:41,485 - common.py - INFO - YAML file 'config\config.yaml' was loaded successfully.
+2024-07-25 11:39:41,486 - common.py - INFO - YAML file 'params.yaml' was loaded successfully.
+2024-07-25 11:39:41,486 - common.py - INFO - Directory 'artifacts' created successfully or already exists.
+2024-07-25 11:39:41,487 - common.py - INFO - Directory 'artifacts/model_evaluation' created successfully or already exists.
+2024-07-25 11:39:53,847 - common.py - INFO - Data successfully written and saved to JSON file: 'artifacts\model_evaluation\evaluation_scores.json'.
+2024-07-25 11:39:53,847 - model_evaluation.py - INFO - Model evaluated successfully and results saved to artifacts\model_evaluation\evaluation_scores.json.
+2024-07-25 11:39:53,892 - main.py - INFO - >>>>>>> Model Evaluation Stage completed <<<<<<<
+
+====================

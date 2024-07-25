@@ -47,3 +47,11 @@ class ModelTrainingConfig:
     epochs: int
     batch_size: int
     learning_rate: float
+    
+@dataclass(frozen=True)
+class ModelEvaluationConfig:
+    root_dir: Path
+    evaluation_results_dir: Path
+    trained_model_dir: Path
+    data_dir: Path
+    metrics: list

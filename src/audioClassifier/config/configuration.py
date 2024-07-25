@@ -2,7 +2,8 @@ import os
 from audioClassifier.constants import *
 from audioClassifier.utils.common import open_yaml_file, create_directories
 from audioClassifier.entity.config_entity import (DataIngestionConfig, DataTransformationConfig, DataValidationConfig, 
-                                                  ModelPreparationConfig, CallbackPreparationConfig, ModelTrainingConfig)
+                                                  ModelPreparationConfig, CallbackPreparationConfig, ModelTrainingConfig,
+                                                  ModelEvaluationConfig)
 
 class ConfigManager:
     def __init__(self, config_file = CONFIG_PATH, params_file = PARAMS_PATH):
@@ -108,3 +109,19 @@ class ConfigManager:
         )
         
         return model_train_config
+    
+    
+    def read_model_eval_config(self) -> ModelEvaluationConfig:
+        model_eval = self.config.model_evaluation
+        
+        create_directories([self.config.model_evaluation.root_dir])
+        
+        model_eval_config = ModelEvaluationConfig(
+            root_dir = Path(model_eval.root_dir),
+            evaluation_results_dir = Path(model_eval.evaluation_results_dir),
+            trained_model_dir = Path(self.config.model_training.trained_model_dir),
+            data_dir = Path(self.config.data_validation.data_path),
+            metrics = self.params.metrics
+        )
+        
+        return model_eval_config
