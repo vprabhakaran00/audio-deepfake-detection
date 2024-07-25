@@ -1,7 +1,8 @@
 import os
 from audioClassifier.constants import *
 from audioClassifier.utils.common import open_yaml_file, create_directories
-from audioClassifier.entity.config_entity import (DataIngestionConfig, DataTransformationConfig, DataValidationConfig, ModelPreparationConfig, CallbackPreparationConfig)
+from audioClassifier.entity.config_entity import (DataIngestionConfig, DataTransformationConfig, DataValidationConfig, 
+                                                  ModelPreparationConfig, CallbackPreparationConfig, ModelTrainingConfig)
 
 class ConfigManager:
     def __init__(self, config_file = CONFIG_PATH, params_file = PARAMS_PATH):
@@ -17,10 +18,10 @@ class ConfigManager:
         create_directories([self.config.data_ingestion.root_dir])
         
         data_ingestion_config = DataIngestionConfig(
-            root_dir = data_ingestion.root_dir,
+            root_dir = Path(data_ingestion.root_dir),
             source_URL = data_ingestion.source_URL,
-            local_data_file = data_ingestion.local_data_file,
-            unzip_dir = data_ingestion.unzip_dir
+            local_data_file = Path(data_ingestion.local_data_file),
+            unzip_dir = Path(data_ingestion.unzip_dir)
         )
         
         return data_ingestion_config
@@ -32,8 +33,8 @@ class ConfigManager:
         create_directories([self.config.data_transformation.root_dir])
         
         data_trans_config = DataTransformationConfig(
-            root_dir = data_trans.root_dir,
-            data_path = data_trans.data_path,
+            root_dir = Path(data_trans.root_dir),
+            data_path = Path(data_trans.data_path),
             n_fft = data_trans.n_fft,
             hop_length = data_trans.hop_length,
             n_mels = data_trans.n_mels 
@@ -48,9 +49,9 @@ class ConfigManager:
         create_directories([self.config.data_validation.root_dir])
         
         data_val_config = DataValidationConfig(
-            root_dir = data_val.root_dir,
-            data_path = data_val.data_path,
-            status_file = data_val.status_file,
+            root_dir = Path(data_val.root_dir),
+            data_path = Path(data_val.data_path),
+            status_file = Path(data_val.status_file),
             required_files = data_val.required_files
         )
         
@@ -63,11 +64,9 @@ class ConfigManager:
         create_directories([self.config.model_preparation.root_dir])
         
         model_prep_config = ModelPreparationConfig(
-            root_dir = model_prep.root_dir,
-            base_model_path = model_prep.base_model_path,
-            updated_model_path = model_prep.updated_model_path,
-            metrics = self.params.metrics,
-            learning_rate = self.params.learning_rate   
+            root_dir = Path(model_prep.root_dir),
+            base_model_path = Path(model_prep.base_model_path),
+            updated_model_path = Path(model_prep.updated_model_path)
         )
         
         return model_prep_config
@@ -76,15 +75,36 @@ class ConfigManager:
     def read_callback_prep_config(self) -> CallbackPreparationConfig:
         callback_prep = self.config.callback_preparation
         
-        checkpoint_dir = os.path.dirname(callback_prep.model_checkpoint_path)
+        checkpoint_dir = os.path.dirname(callback_prep.model_checkpoint_dir)
         create_directories([checkpoint_dir, self.config.callback_preparation.tensorboard_log_dir])
         
         callback_prep_config = CallbackPreparationConfig(
-            root_dir = callback_prep.root_dir,
-            tensorboard_log_dir = callback_prep.tensorboard_log_dir,
-            model_checkpoint_path = callback_prep.model_checkpoint_path,
+            root_dir = Path(callback_prep.root_dir),
+            tensorboard_log_dir = Path(callback_prep.tensorboard_log_dir),
+            model_checkpoint_dir = Path(callback_prep.model_checkpoint_dir),
             early_stopping_monitor = self.params.early_stopping_monitor,
             early_stopping_patience = self.params.early_stopping_patience 
         )
         
         return callback_prep_config
+    
+    
+    def read_model_train_config(self) -> ModelTrainingConfig:
+        model_train = self.config.model_training
+        model_prep = self.config.model_preparation
+        data_val = self.config.data_validation
+        
+        create_directories([self.config.model_training.root_dir])
+        
+        model_train_config = ModelTrainingConfig(
+            root_dir = Path(model_train.root_dir),
+            trained_model_dir = Path(model_train.trained_model_dir),
+            data_dir = Path(data_val.data_path),
+            updated_model_dir = Path(model_prep.updated_model_path),
+            metrics = self.params.metrics,
+            batch_size = self.params.batch_size,
+            epochs = self.params.epochs,   
+            learning_rate = self.params.learning_rate
+        )
+        
+        return model_train_config

@@ -27,4 +27,8 @@ model_preparation:
 callback_preparation:
   root_dir: artifacts/callback_preparation
   tensorboard_log_dir: artifacts/callback_preparation/tensorboard_log_dir
-  model_checkpoint_path: artifacts/callback_preparation/checkpoint_dir/model-{epoch:02d}-{val_loss:0.2f}.keras
+  model_checkpoint_dir: artifacts/callback_preparation/checkpoint_dir/model-{epoch:02d}-{val_loss:0.2f}.keras
+
+model_training:
+  root_dir: artifacts/model_training
+  trained_model_dir: artifacts/model_training/model.keras

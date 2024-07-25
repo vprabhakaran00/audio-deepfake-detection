@@ -3,6 +3,7 @@ from audioClassifier.pipeline.stage_01_data_ingestion import DataIngestionTraini
 from audioClassifier.pipeline.stage_02_data_transformation import DataTransformationTrainingPipeline
 from audioClassifier.pipeline.stage_03_data_validation import DataValidationTrainingPipeline
 from audioClassifier.pipeline.stage_04_model_preparation import ModelPreparationTrainingPipeline
+from audioClassifier.pipeline.stage_05_model_training import ModelTrainingPipeline
 
 STAGE_NAME = 'Data Ingestion Stage'
 
@@ -48,6 +49,19 @@ STAGE_NAME = 'Model Preparation Stage'
 try:
     logger.info(f">>>>>>> {STAGE_NAME} started <<<<<<<")
     model_preparation = ModelPreparationTrainingPipeline()
+    model_preparation.main()
+    logger.info(f">>>>>>> {STAGE_NAME} completed <<<<<<<\n\n====================")
+except Exception as e:
+    logger.exception(e)
+    raise e
+
+
+
+STAGE_NAME = 'Model Training Stage'
+
+try:
+    logger.info(f">>>>>>> {STAGE_NAME} started <<<<<<<")
+    model_preparation = ModelTrainingPipeline()
     model_preparation.main()
     logger.info(f">>>>>>> {STAGE_NAME} completed <<<<<<<\n\n====================")
 except Exception as e:

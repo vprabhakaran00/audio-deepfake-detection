@@ -1,2 +1,15 @@
 2024-06-09 18:49:04,729 - common.py - ERROR - File config\config.yaml not found.
 2024-06-09 18:49:20,861 - common.py - ERROR - File config\config.yaml not found.
+2024-07-24 16:22:29,291 - module_wrapper.py - WARNING - From d:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-07-24 16:22:34,053 - module_wrapper.py - WARNING - From d:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-24 16:22:34,129 - module_wrapper.py - WARNING - From d:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-24 16:24:17,123 - module_wrapper.py - WARNING - From d:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2024-07-24 16:24:22,099 - module_wrapper.py - WARNING - From d:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-24 16:24:22,168 - module_wrapper.py - WARNING - From d:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-24 16:35:18,609 - common.py - ERROR - File config\config.yaml not found.

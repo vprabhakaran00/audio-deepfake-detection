@@ -1,4 +1,4 @@
-tensorflow
+tensorflow==2.15
 tensorflow-io
 imbalanced-learn
 librosa

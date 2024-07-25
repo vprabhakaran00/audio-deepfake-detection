@@ -20,21 +20,30 @@ class DataTransformationConfig:
 class DataValidationConfig:
     root_dir: Path
     data_path: Path
-    status_file: str
+    status_file: Path
     required_files: list
     
 @dataclass(frozen=True)
 class ModelPreparationConfig:
     root_dir: Path
     base_model_path: Path
-    updated_model_path: int
-    metrics: list
-    learning_rate: float
+    updated_model_path: Path
     
 @dataclass(frozen=True)
 class CallbackPreparationConfig:
     root_dir: Path
     tensorboard_log_dir: Path
-    model_checkpoint_path: Path
+    model_checkpoint_dir: Path
     early_stopping_monitor: str
     early_stopping_patience: int
+    
+@dataclass(frozen=True)
+class ModelTrainingConfig:
+    root_dir: Path
+    trained_model_dir: Path
+    data_dir: Path
+    updated_model_dir: Path
+    metrics: list
+    epochs: int
+    batch_size: int
+    learning_rate: float

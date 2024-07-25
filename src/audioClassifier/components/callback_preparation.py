@@ -9,15 +9,15 @@ class CallbackPreparation:
         self.config = config
         
     def _get_timestamped_tb_directory(self):
-        timestamp = time.strftime("%Y-%m-%d--%H:%M:%S")
+        timestamp = time.strftime("%Y-%m-%d--%H%M%S")
         return os.path.join(self.config.tensorboard_log_dir, f"run-{timestamp}")
     
     def prepare_callbacks(self):
         tensorboard_log_dir = self._get_timestamped_tb_directory()
         
         try:
-            tensorboard_callback = callbacks.TensorBoard(log_dir = tensorboard_log_dir)
-            checkpoint_callback = callbacks.ModelCheckpoint(filepath = self.config.model_checkpoint_path, 
+            tensorboard_callback = callbacks.TensorBoard(log_dir = str(tensorboard_log_dir))
+            checkpoint_callback = callbacks.ModelCheckpoint(filepath = str(self.config.model_checkpoint_dir), 
                                                             save_best_only = True)
             early_stopping_callback = callbacks.EarlyStopping(monitor = self.config.early_stopping_monitor, 
                                                               patience = self.config.early_stopping_patience, 

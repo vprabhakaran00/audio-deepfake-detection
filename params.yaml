@@ -1,4 +1,7 @@
-metrics: ['accuracy', AUC(name='auc')]
+metrics: 
+  - 'accuracy'
+  - 'auc'
+  - 'recall'
 batch_size: 32
 epochs: 100
 learning_rate: 0.001
