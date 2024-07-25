@@ -1,0 +1,150 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/audioClassifier/pipeline/stage_01_data_ingestion.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: 59736c392dcdd21aac3004b267cad86d
+      size: 2141
+    - path: src/audioClassifier/pipeline/stage_01_data_ingestion.py
+      hash: md5
+      md5: 7436f18ef0bee928535e1622929d99a8
+      size: 909
+    outs:
+    - path: artifacts/data_ingestion/KAGGLE/AUDIO
+      hash: md5
+      md5: 9cd5fb3368ca587b7d7d5a43ee6d57a0.dir
+      size: 5271832148
+      nfiles: 64
+  data_transformation:
+    cmd: python src/audioClassifier/pipeline/stage_02_data_transformation.py
+    deps:
+    - path: artifacts/data_ingestion/KAGGLE/AUDIO
+      hash: md5
+      md5: 9cd5fb3368ca587b7d7d5a43ee6d57a0.dir
+      size: 5271832148
+      nfiles: 64
+    - path: config/config.yaml
+      hash: md5
+      md5: 59736c392dcdd21aac3004b267cad86d
+      size: 2141
+    - path: src/audioClassifier/pipeline/stage_02_data_transformation.py
+      hash: md5
+      md5: adb32170e6e16ff357d8e674800cd95a
+      size: 932
+    outs:
+    - path: artifacts/data_transformation
+      hash: md5
+      md5: c1aa93d942bd241d4de0172124f16b51.dir
+      size: 5750189212
+      nfiles: 4
+  data_validation:
+    cmd: python src/audioClassifier/pipeline/stage_03_data_validation.py
+    deps:
+    - path: artifacts/data_transformation
+      hash: md5
+      md5: c1aa93d942bd241d4de0172124f16b51.dir
+      size: 5750189212
+      nfiles: 4
+    - path: config/config.yaml
+      hash: md5
+      md5: 59736c392dcdd21aac3004b267cad86d
+      size: 2141
+    - path: src/audioClassifier/pipeline/stage_03_data_validation.py
+      hash: md5
+      md5: feb240a35a69fdc0c123c60571d01ee9
+      size: 872
+    outs:
+    - path: artifacts/data_validation/status.txt
+      hash: md5
+      md5: f2fa71430f5ff30f757868770abc85e1
+      size: 166
+  model_preparation:
+    cmd: python src/audioClassifier/pipeline/stage_04_model_preparation.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: 59736c392dcdd21aac3004b267cad86d
+      size: 2141
+    - path: src/audioClassifier/pipeline/stage_04_model_preparation.py
+      hash: md5
+      md5: e7a99b5945a5f508bb028632dd9d1f9b
+      size: 897
+    outs:
+    - path: artifacts/model_preparation
+      hash: md5
+      md5: 2fecef89a8fb4e07972e7d1413ca38e2.dir
+      size: 31530481
+      nfiles: 2
+  model_training:
+    cmd: python src/audioClassifier/pipeline/stage_05_model_training.py
+    deps:
+    - path: artifacts/data_transformation
+      hash: md5
+      md5: c1aa93d942bd241d4de0172124f16b51.dir
+      size: 5750189212
+      nfiles: 4
+    - path: artifacts/model_preparation/updated_model.keras
+      hash: md5
+      md5: 59696365958d87f41aafe2bae87f4925
+      size: 18787587
+    - path: config/config.yaml
+      hash: md5
+      md5: 59736c392dcdd21aac3004b267cad86d
+      size: 2141
+    - path: src/audioClassifier/components/callback_preparation.py
+      hash: md5
+      md5: efedbb2c48f56ba98cbfb1c09a5ad1ed
+      size: 1425
+    - path: src/audioClassifier/pipeline/stage_05_model_training.py
+      hash: md5
+      md5: 996a37f87005ed781db6b15a3d742dc7
+      size: 1205
+    params:
+      params.yaml:
+        batch_size: 32
+        early_stopping_monitor: val_auc
+        early_stopping_patience: 3
+        epochs: 100
+        learning_rate: 0.001
+        metrics:
+        - accuracy
+        - auc
+        - recall
+    outs:
+    - path: artifacts/model_training/model.keras
+      hash: md5
+      md5: 52f268cbb7cf8763ee6a1a740e4b2cf1
+      size: 30852589
+  model_evaluation:
+    cmd: python src/audioClassifier/pipeline/stage_06_model_evaluation.py
+    deps:
+    - path: artifacts/data_transformation
+      hash: md5
+      md5: c1aa93d942bd241d4de0172124f16b51.dir
+      size: 5750189212
+      nfiles: 4
+    - path: artifacts/model_training/model.keras
+      hash: md5
+      md5: 52f268cbb7cf8763ee6a1a740e4b2cf1
+      size: 30852589
+    - path: config/config.yaml
+      hash: md5
+      md5: 59736c392dcdd21aac3004b267cad86d
+      size: 2141
+    - path: src/audioClassifier/pipeline/stage_06_model_evaluation.py
+      hash: md5
+      md5: f40459412c75357177f5b22b97c1c568
+      size: 885
+    params:
+      params.yaml:
+        metrics:
+        - accuracy
+        - auc
+        - recall
+    outs:
+    - path: artifacts/model_evaluation/evaluation_scores.json
+      hash: md5
+      md5: 461be6085c4f72e755ef0d3e9173c20d
+      size: 139

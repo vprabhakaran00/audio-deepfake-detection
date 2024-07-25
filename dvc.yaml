@@ -1,0 +1,64 @@
+stages:
+  data_ingestion:
+    cmd: python src/audioClassifier/pipeline/stage_01_data_ingestion.py
+    deps:
+      - src/audioClassifier/pipeline/stage_01_data_ingestion.py
+      - config/config.yaml
+    outs:
+      - artifacts/data_ingestion/KAGGLE/AUDIO
+
+  data_transformation:
+    cmd: python src/audioClassifier/pipeline/stage_02_data_transformation.py
+    deps:
+      - src/audioClassifier/pipeline/stage_02_data_transformation.py
+      - config/config.yaml
+      - artifacts/data_ingestion/KAGGLE/AUDIO
+    outs:
+      - artifacts/data_transformation
+
+  data_validation:
+    cmd: python src/audioClassifier/pipeline/stage_03_data_validation.py
+    deps:
+      - src/audioClassifier/pipeline/stage_03_data_validation.py
+      - config/config.yaml
+      - artifacts/data_transformation
+    outs:
+      - artifacts/data_validation/status.txt
+
+  model_preparation:
+    cmd: python src/audioClassifier/pipeline/stage_04_model_preparation.py
+    deps:
+      - src/audioClassifier/pipeline/stage_04_model_preparation.py
+      - config/config.yaml
+    outs:
+      - artifacts/model_preparation
+
+  model_training:
+    cmd: python src/audioClassifier/pipeline/stage_05_model_training.py
+    deps:
+      - src/audioClassifier/pipeline/stage_05_model_training.py
+      - src/audioClassifier/components/callback_preparation.py
+      - config/config.yaml
+      - artifacts/model_preparation/updated_model.keras
+      - artifacts/data_transformation
+    params:
+      - metrics
+      - epochs
+      - batch_size
+      - learning_rate
+      - early_stopping_monitor
+      - early_stopping_patience
+    outs:
+      - artifacts/model_training/model.keras
+
+  model_evaluation:
+    cmd: python src/audioClassifier/pipeline/stage_06_model_evaluation.py
+    deps:
+      - src/audioClassifier/pipeline/stage_06_model_evaluation.py
+      - config/config.yaml
+      - artifacts/model_training/model.keras
+      - artifacts/data_transformation
+    params:
+      - metrics
+    outs:
+      - artifacts/model_evaluation/evaluation_scores.json
