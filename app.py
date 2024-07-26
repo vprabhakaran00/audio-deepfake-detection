@@ -78,17 +78,20 @@ class DetectionPipeline:
     def make_prediction(self):
         try:
             results = []
+            confidences = []
             for i in range(5):
                 spectrogram = self._create_test_set_from_audio()
                 prob = model.predict(spectrogram)[0][0]
                 prediction = (prob > 0.59045565).astype(int)
                 results.append(prediction)
+                confidences.append(prob)
             final_pred = stats.mode(results)[0]
+            avg_confidence = np.mean(confidences)
             logger.info("Prediction made successfully.")
             if final_pred == 1:
-                return "Fake"
+                return "Fake", avg_confidence*100
             else:
-                return "Not Fake"
+                return "Not Fake", (1 - avg_confidence)*100
         except Exception as e:
             logger.error(f"Error during prediction: {e}")
             raise e
@@ -97,24 +100,25 @@ class DetectionPipeline:
 def index():
     if request.method == 'POST':
         if 'file' not in request.files:
-            return render_template('index.html', prediction = 'No file part')
+            return render_template('index.html', prediction = 'No file part', confidence = '')
         
         file = request.files['file']
         
         if file.filename == '':
-            return render_template('index.html', prediction = 'No selected file')
+            return render_template('index.html', prediction = 'No selected file', confidence = '')
         
         if file and (file.filename.endswith('.wav') or file.filename.endswith('.mp3')):
             try:
                 audio_data = file.read()
                 pipeline = DetectionPipeline(audio_data)
-                prediction = pipeline.make_prediction()
-                return render_template('index.html', prediction = prediction)
+                prediction, confidence = pipeline.make_prediction()
+                confidence_str = f"{confidence:.2f}"
+                return render_template('index.html', prediction = prediction, confidence = confidence_str)
             except Exception as e:
                 logger.error(f"Error in processing file: {e}")
-                return render_template('index.html', prediction = 'Error in processing file')
+                return render_template('index.html', prediction = 'Error in processing file', confidence = '')
     
-    return render_template('index.html', prediction = '')
+    return render_template('index.html', prediction = '', confidence = '')
 
 if __name__ == '__main__':
     app.run(port = 8080, debug=True)

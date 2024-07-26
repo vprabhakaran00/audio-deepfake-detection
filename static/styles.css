@@ -1,0 +1,107 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-file-upload:hover {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-name {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #cccccc;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+.progress-container {
+    display: none;
+    margin-top: 20px;
+    background-color: #333333;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.progress-bar {
+    background-color: #4caf50;
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+    transition: width 0.2s;
+}
+
+.prediction {
+    margin-top: 20px;
+}
+
+#prediction-result {
+    font-size: 1.2em;
+}
+
+.prediction-class {
+    font-weight: bold;
+    color: #ff0000; /* Red color for "Fake" */
+}
+
+.not-fake {
+    font-weight: bold;
+    color: #00ff00; /* Green color for "Not Fake" */
+}

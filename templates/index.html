@@ -4,20 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audio Classification</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Upload Audio File</h1>
-    <form action="/" method="post" enctype="multipart/form-data">
-        <label for="file">Select audio file (mp3 or wav):</label>
-        <input type="file" id="file" name="file" accept=".mp3,.wav">
-        <input type="submit" value="Upload">
-    </form>
+    <div class="container">
+        <h1>Audio Classification</h1>
+        <form id="upload-form" action="/" method="post" enctype="multipart/form-data">
+            <label for="file-upload" class="custom-file-upload">
+                Choose an audio file
+            </label>
+            <input id="file-upload" type="file" name="file" accept=".wav, .mp3">
+            <div id="file-name" class="file-name"></div>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="progress-container" class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        <div class="prediction">
+            {% if prediction %}
+                <p id="prediction-result">
+                    The prediction for the uploaded audio file is 
+                    <span class="{{ 'prediction-class' if prediction == 'Fake' else 'not-fake' }}">
+                        {{ prediction }}
+                    </span>
+                    with a confidence of {{ confidence }}%.
+                </p>
+            {% endif %}
+        </div>
+    </div>
+    <script>
+        document.getElementById('file-upload').addEventListener('change', function(event) {
+            const fileName = event.target.files[0]?.name || '';
+            document.getElementById('file-name').innerText = fileName ? `Selected file: ${fileName}` : '';
+        });
 
-    {% if prediction is not none %}
-        <h2>Prediction Result</h2>
-        <p>The audio file is classified as: {{ prediction }}</p>
-    {% elif error %}
-        <p style="color: red;">{{ error }}</p>
-    {% endif %}
+        document.getElementById('upload-form').addEventListener('submit', function(event) {
+            document.getElementById('progress-container').style.display = 'block';
+            const progressBar = document.getElementById('progress-bar');
+            const interval = setInterval(() => {
+                const width = parseFloat(progressBar.style.width) || 0;
+                if (width >= 100) {
+                    clearInterval(interval);
+                } else {
+                    progressBar.style.width = `${width + 5}%`;
+                }
+            }, 200);
+
+            // Simulate the end of processing (remove this in production)
+            setTimeout(() => {
+                clearInterval(interval);
+                progressBar.style.width = '100%';
+                setTimeout(() => {
+                    document.getElementById('progress-container').style.display = 'none';
+                }, 500);
+            }, 3000);
+        });
+    </script>
 </body>
 </html>
