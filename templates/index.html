@@ -3,43 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Classification</title>
-    <link rel="stylesheet" href="static/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Audio File Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <div class="container">
-        <h1>Audio Classification</h1>
-        <form id="upload-form" action="/" method="post" enctype="multipart/form-data">
-            <label for="file-upload" class="custom-file-upload">
-                Choose an audio file
+        <h1>Audio File Prediction</h1>
+        <form id="upload-form" method="post" enctype="multipart/form-data">
+            <label for="file" class="custom-file-upload">
+                Choose File
+                <input type="file" id="file" name="file" accept=".wav, .mp3" required>
             </label>
-            <input id="file-upload" type="file" name="file" accept=".wav, .mp3">
-            <div id="file-name" class="file-name"></div>
-            <button type="submit">Upload</button>
+            <button type="submit">Predict</button>
         </form>
-        <div id="progress-container" class="progress-container">
+        
+        <div id="progress-container" class="progress-container" style="display: none;">
             <div id="progress-bar" class="progress-bar"></div>
         </div>
-        <div class="prediction">
-            {% if prediction %}
-                <p id="prediction-result">
-                    The prediction for the uploaded audio file is 
-                    <span class="{{ 'prediction-class' if prediction == 'Fake' else 'not-fake' }}">
-                        {{ prediction }}
-                    </span>
-                    with a confidence of {{ confidence }}%.
-                </p>
-            {% endif %}
+        
+        <div id="loading-spinner" class="loading-spinner" style="display: none;"></div>
+        
+        <audio id="audio-player" class="audio-player" controls style="display: none;">
+            <source id="audio-source" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <div id="prediction-result" class="prediction-result" style="display: none;">
+            <p>
+                The prediction for the uploaded audio file is 
+                <span id="prediction-label" class=""></span>
+                with a confidence of <span id="confidence-label"></span>%.
+            </p>
         </div>
     </div>
+    
     <script>
-        document.getElementById('file-upload').addEventListener('change', function(event) {
-            const fileName = event.target.files[0]?.name || '';
-            document.getElementById('file-name').innerText = fileName ? `Selected file: ${fileName}` : '';
+        document.getElementById('file').addEventListener('change', function(event) {
+            // Clear previous prediction
+            document.getElementById('prediction-result').style.display = 'none';
+            document.getElementById('prediction-label').className = '';
+            document.getElementById('confidence-label').textContent = '';
+
+            var file = event.target.files[0];
+            if (file) {
+                document.getElementById('audio-source').src = URL.createObjectURL(file);
+                document.getElementById('audio-player').style.display = 'block';
+                document.getElementById('audio-player').load();
+            }
         });
 
         document.getElementById('upload-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('loading-spinner').style.display = 'block';
             document.getElementById('progress-container').style.display = 'block';
             const progressBar = document.getElementById('progress-bar');
             const interval = setInterval(() => {
@@ -51,14 +66,42 @@
                 }
             }, 200);
 
-            // Simulate the end of processing (remove this in production)
-            setTimeout(() => {
+            const formData = new FormData(this);
+            fetch('/', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
                 clearInterval(interval);
                 progressBar.style.width = '100%';
                 setTimeout(() => {
                     document.getElementById('progress-container').style.display = 'none';
+                    document.getElementById('loading-spinner').style.display = 'none';
                 }, 500);
-            }, 3000);
+
+                document.getElementById('prediction-result').style.display = 'block';
+                document.getElementById('prediction-label').textContent = data.prediction;
+                document.getElementById('confidence-label').textContent = data.confidence.toFixed(2);
+
+                if (data.prediction === 'Fake') {
+                    document.getElementById('prediction-label').className = 'fake';
+                } else {
+                    document.getElementById('prediction-label').className = 'not-fake';
+                }
+            })
+            .catch(error => {
+                clearInterval(interval);
+                progressBar.style.width = '100%';
+                setTimeout(() => {
+                    document.getElementById('progress-container').style.display = 'none';
+                    document.getElementById('loading-spinner').style.display = 'none';
+                }, 500);
+                console.error('Error:', error);
+                document.getElementById('prediction-result').style.display = 'block';
+                document.getElementById('prediction-label').textContent = 'Error';
+                document.getElementById('confidence-label').textContent = '';
+            });
         });
     </script>
 </body>

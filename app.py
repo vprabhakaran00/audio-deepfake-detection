@@ -3,7 +3,7 @@ import librosa
 import numpy as np
 from scipy import stats
 from tensorflow.keras.models import load_model
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, jsonify
 from audioClassifier import logger
 
 app = Flask(__name__)
@@ -89,9 +89,9 @@ class DetectionPipeline:
             avg_confidence = np.mean(confidences)
             logger.info("Prediction made successfully.")
             if final_pred == 1:
-                return "Fake", avg_confidence*100
+                return {"prediction": "Fake", "confidence": avg_confidence*100}
             else:
-                return "Not Fake", (1 - avg_confidence)*100
+                return {"prediction": "Not Fake", "confidence": (1 - avg_confidence)*100}
         except Exception as e:
             logger.error(f"Error during prediction: {e}")
             raise e
@@ -100,23 +100,22 @@ class DetectionPipeline:
 def index():
     if request.method == 'POST':
         if 'file' not in request.files:
-            return render_template('index.html', prediction = 'No file part', confidence = '')
+            return jsonify({'prediction': 'No file part', 'confidence': 0})
         
         file = request.files['file']
         
         if file.filename == '':
-            return render_template('index.html', prediction = 'No selected file', confidence = '')
+            return jsonify({'prediction': 'No selected file', 'confidence': 0})
         
         if file and (file.filename.endswith('.wav') or file.filename.endswith('.mp3')):
             try:
                 audio_data = file.read()
                 pipeline = DetectionPipeline(audio_data)
-                prediction, confidence = pipeline.make_prediction()
-                confidence_str = f"{confidence:.2f}"
-                return render_template('index.html', prediction = prediction, confidence = confidence_str)
+                prediction_data = pipeline.make_prediction()
+                return jsonify(prediction_data)
             except Exception as e:
                 logger.error(f"Error in processing file: {e}")
-                return render_template('index.html', prediction = 'Error in processing file', confidence = '')
+                return jsonify({'prediction': 'Error in processing file', 'confidence': 0})
     
     return render_template('index.html', prediction = '', confidence = '')
 
