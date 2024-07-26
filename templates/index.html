@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Classification</title>
+</head>
+<body>
+    <h1>Upload Audio File</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="file">Select audio file (mp3 or wav):</label>
+        <input type="file" id="file" name="file" accept=".mp3,.wav">
+        <input type="submit" value="Upload">
+    </form>
+
+    {% if prediction is not none %}
+        <h2>Prediction Result</h2>
+        <p>The audio file is classified as: {{ prediction }}</p>
+    {% elif error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
