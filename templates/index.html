@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio File Prediction</title>
+    <title>Audio Deepfake Detection</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <style>
         button[disabled] {
@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Audio File Prediction</h1>
+        <h1>Audio Deepfake Detection</h1>
         <form id="upload-form" method="post" enctype="multipart/form-data">
             <label for="file" class="custom-file-upload">
                 Choose File
@@ -32,7 +32,7 @@
         
         <div id="prediction-result" class="prediction-result" style="display: none;">
             <p>
-                The prediction for the uploaded audio file is 
+                The uploaded audio file is predicted to be 
                 <span id="prediction-label" class=""></span>
                 with a confidence of <span id="confidence-label"></span>%.
             </p>
