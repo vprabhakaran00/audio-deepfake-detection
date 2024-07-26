@@ -63,3 +63,175 @@
 2024-07-25 20:00:49,350 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:00:49] "POST / HTTP/1.1" 200 -
 2024-07-25 20:00:56,165 - app.py - INFO - Prediction made successfully.
 2024-07-25 20:00:56,166 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:00:56] "POST / HTTP/1.1" 200 -
+2024-07-25 20:05:17,131 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 20:05:17,391 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-25 20:05:24,041 - app.py - INFO - Model loaded successfully at startup
+2024-07-25 20:05:24,052 - _internal.py - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2024-07-25 20:05:24,052 - _internal.py - INFO - [33mPress CTRL+C to quit[0m
+2024-07-25 20:05:24,054 - _internal.py - INFO -  * Restarting with stat
+2024-07-25 20:05:28,279 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 20:05:28,539 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-25 20:05:35,138 - app.py - INFO - Model loaded successfully at startup
+2024-07-25 20:05:35,142 - _internal.py - WARNING -  * Debugger is active!
+2024-07-25 20:05:35,147 - _internal.py - INFO -  * Debugger PIN: 716-685-242
+2024-07-25 20:05:42,017 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:05:42] "GET / HTTP/1.1" 200 -
+2024-07-25 20:05:42,234 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:05:42] "GET /static/styles.css HTTP/1.1" 200 -
+2024-07-25 20:05:42,262 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:05:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-07-25 20:05:48,848 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:05:48,849 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:05:48] "POST / HTTP/1.1" 200 -
+2024-07-25 20:05:59,947 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:05:59] "POST / HTTP/1.1" 200 -
+2024-07-25 20:09:43,086 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:09:43] "GET / HTTP/1.1" 200 -
+2024-07-25 20:09:43,184 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:09:43] "GET /static/styles.css HTTP/1.1" 200 -
+2024-07-25 20:09:43,224 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:09:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-07-25 20:09:53,518 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:09:53,519 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:09:53] "POST / HTTP/1.1" 200 -
+2024-07-25 20:10:24,421 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:10:24,422 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:10:24] "POST / HTTP/1.1" 200 -
+2024-07-25 20:12:26,218 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:12:26] "GET / HTTP/1.1" 200 -
+2024-07-25 20:12:26,312 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:12:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-07-25 20:12:36,642 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:12:36,642 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:12:36] "POST / HTTP/1.1" 200 -
+2024-07-25 20:12:44,255 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:12:44,256 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:12:44] "POST / HTTP/1.1" 200 -
+2024-07-25 20:13:53,851 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 20:13:54,109 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-25 20:14:00,771 - app.py - INFO - Model loaded successfully at startup
+2024-07-25 20:14:00,781 - _internal.py - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2024-07-25 20:14:00,782 - _internal.py - INFO - [33mPress CTRL+C to quit[0m
+2024-07-25 20:14:00,783 - _internal.py - INFO -  * Restarting with stat
+2024-07-25 20:14:04,998 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 20:14:05,258 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-25 20:14:11,844 - app.py - INFO - Model loaded successfully at startup
+2024-07-25 20:14:11,849 - _internal.py - WARNING -  * Debugger is active!
+2024-07-25 20:14:11,854 - _internal.py - INFO -  * Debugger PIN: 716-685-242
+2024-07-25 20:14:16,726 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:14:16] "GET / HTTP/1.1" 200 -
+2024-07-25 20:14:17,013 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:14:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-07-25 20:14:33,251 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:14:33,252 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:14:33] "POST / HTTP/1.1" 200 -
+2024-07-25 20:14:41,574 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:14:41,575 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:14:41] "POST / HTTP/1.1" 200 -
+2024-07-25 20:15:33,365 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:15:33] "GET / HTTP/1.1" 200 -
+2024-07-25 20:15:33,451 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:15:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-07-25 20:15:54,202 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 20:15:54,463 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-25 20:16:01,131 - app.py - INFO - Model loaded successfully at startup
+2024-07-25 20:16:01,142 - _internal.py - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2024-07-25 20:16:01,143 - _internal.py - INFO - [33mPress CTRL+C to quit[0m
+2024-07-25 20:16:01,145 - _internal.py - INFO -  * Restarting with stat
+2024-07-25 20:16:05,388 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 20:16:05,645 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-25 20:16:12,276 - app.py - INFO - Model loaded successfully at startup
+2024-07-25 20:16:12,281 - _internal.py - WARNING -  * Debugger is active!
+2024-07-25 20:16:12,286 - _internal.py - INFO -  * Debugger PIN: 716-685-242
+2024-07-25 20:16:17,019 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:16:17] "GET / HTTP/1.1" 200 -
+2024-07-25 20:16:17,215 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:16:17] "GET /static/styles.css HTTP/1.1" 200 -
+2024-07-25 20:16:17,248 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:16:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-07-25 20:16:40,085 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:16:40,086 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:16:40] "POST / HTTP/1.1" 200 -
+2024-07-25 20:20:46,232 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:20:46] "GET / HTTP/1.1" 200 -
+2024-07-25 20:20:46,330 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:20:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-07-25 20:20:51,488 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:20:51,489 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:20:51] "POST / HTTP/1.1" 200 -
+2024-07-25 20:23:33,069 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:23:33] "GET / HTTP/1.1" 200 -
+2024-07-25 20:23:33,157 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:23:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-07-25 20:24:37,205 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:24:37] "GET / HTTP/1.1" 200 -
+2024-07-25 20:24:37,281 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:24:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-07-25 20:24:45,296 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:24:45,297 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:24:45] "POST / HTTP/1.1" 200 -
+2024-07-25 20:25:11,467 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 20:25:11,723 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-25 20:25:18,334 - app.py - INFO - Model loaded successfully at startup
+2024-07-25 20:25:18,345 - _internal.py - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2024-07-25 20:25:18,345 - _internal.py - INFO - [33mPress CTRL+C to quit[0m
+2024-07-25 20:25:18,347 - _internal.py - INFO -  * Restarting with stat
+2024-07-25 20:25:22,570 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 20:25:22,828 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-25 20:25:29,458 - app.py - INFO - Model loaded successfully at startup
+2024-07-25 20:25:29,462 - _internal.py - WARNING -  * Debugger is active!
+2024-07-25 20:25:29,466 - _internal.py - INFO -  * Debugger PIN: 716-685-242
+2024-07-25 20:25:33,985 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:25:33] "GET / HTTP/1.1" 200 -
+2024-07-25 20:25:34,198 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:25:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-07-25 20:25:50,602 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:25:50,602 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:25:50] "POST / HTTP/1.1" 200 -
+2024-07-25 20:28:50,816 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:28:50] "GET / HTTP/1.1" 200 -
+2024-07-25 20:28:50,910 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:28:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-07-25 20:28:59,958 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:28:59,959 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:28:59] "POST / HTTP/1.1" 200 -
+2024-07-25 20:29:21,632 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 20:29:21,890 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-25 20:29:28,579 - app.py - INFO - Model loaded successfully at startup
+2024-07-25 20:29:28,590 - _internal.py - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2024-07-25 20:29:28,590 - _internal.py - INFO - [33mPress CTRL+C to quit[0m
+2024-07-25 20:29:28,592 - _internal.py - INFO -  * Restarting with stat
+2024-07-25 20:29:32,796 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 20:29:33,054 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-25 20:29:39,848 - app.py - INFO - Model loaded successfully at startup
+2024-07-25 20:29:39,852 - _internal.py - WARNING -  * Debugger is active!
+2024-07-25 20:29:39,857 - _internal.py - INFO -  * Debugger PIN: 716-685-242
+2024-07-25 20:29:52,064 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:29:52] "GET / HTTP/1.1" 200 -
+2024-07-25 20:29:52,314 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:29:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-07-25 20:30:35,059 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:30:35,060 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:30:35] "POST / HTTP/1.1" 200 -
+2024-07-25 20:31:26,961 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:31:26,962 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:31:26] "POST / HTTP/1.1" 200 -
+2024-07-25 20:31:43,794 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:31:43,795 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:31:43] "POST / HTTP/1.1" 200 -
+2024-07-25 20:32:15,522 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:32:15,522 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:32:15] "POST / HTTP/1.1" 200 -
+2024-07-25 20:38:00,000 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:38:00] "GET / HTTP/1.1" 200 -
+2024-07-25 20:38:00,151 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:38:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-07-25 20:40:42,237 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:40:42,238 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:40:42] "POST / HTTP/1.1" 200 -
+2024-07-25 20:46:11,446 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:46:11] "GET / HTTP/1.1" 200 -
+2024-07-25 20:46:11,556 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:46:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-07-25 20:46:26,154 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:46:26,154 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:46:26] "POST / HTTP/1.1" 200 -
+2024-07-25 20:49:49,224 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:49:49] "GET / HTTP/1.1" 200 -
+2024-07-25 20:49:49,331 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:49:49] "GET /static/styles.css HTTP/1.1" 200 -
+2024-07-25 20:49:58,778 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:49:58,779 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:49:58] "POST / HTTP/1.1" 200 -
+2024-07-25 20:50:27,345 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:50:27,346 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:50:27] "POST / HTTP/1.1" 200 -
+2024-07-25 20:53:32,385 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:53:32] "GET / HTTP/1.1" 200 -
+2024-07-25 20:53:32,507 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:53:32] "GET /static/styles.css HTTP/1.1" 200 -
+2024-07-25 20:53:49,437 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:53:49,438 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:53:49] "POST / HTTP/1.1" 200 -
+2024-07-25 20:54:19,543 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:54:19] "GET / HTTP/1.1" 200 -
+2024-07-25 20:54:19,634 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:54:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-07-25 20:54:25,849 - app.py - INFO - Prediction made successfully.
+2024-07-25 20:54:25,850 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:54:25] "POST / HTTP/1.1" 200 -
+2024-07-25 20:54:43,805 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:54:43] "GET / HTTP/1.1" 200 -
+2024-07-25 20:54:43,919 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:54:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-07-25 20:54:46,481 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:54:46] "GET / HTTP/1.1" 200 -
+2024-07-25 20:54:46,592 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:54:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-07-25 20:55:10,289 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:55:10] "GET / HTTP/1.1" 200 -
+2024-07-25 20:55:10,401 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:55:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-07-25 20:58:02,937 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:58:02] "GET / HTTP/1.1" 200 -
+2024-07-25 20:58:03,044 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:58:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-07-25 20:58:24,949 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:58:24] "GET / HTTP/1.1" 200 -
+2024-07-25 20:58:25,055 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 20:58:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -

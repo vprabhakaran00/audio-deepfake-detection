@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audio File Prediction</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        button[disabled] {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -14,12 +20,8 @@
                 Choose File
                 <input type="file" id="file" name="file" accept=".wav, .mp3" required>
             </label>
-            <button type="submit">Predict</button>
+            <button id="predict-button" type="submit" disabled>Predict</button>
         </form>
-        
-        <div id="progress-container" class="progress-container" style="display: none;">
-            <div id="progress-bar" class="progress-bar"></div>
-        </div>
         
         <div id="loading-spinner" class="loading-spinner" style="display: none;"></div>
         
@@ -35,36 +37,56 @@
                 with a confidence of <span id="confidence-label"></span>%.
             </p>
         </div>
+        
+        <div id="error-message" class="error-message" style="display: none;">
+            <p>Unsupported file type. Please upload a .wav or .mp3 file.</p>
+        </div>
     </div>
     
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Enable the predict button on page load
+            document.getElementById('predict-button').disabled = false;
+        });
+
         document.getElementById('file').addEventListener('change', function(event) {
-            // Clear previous prediction
+            // Clear previous prediction and error message
             document.getElementById('prediction-result').style.display = 'none';
             document.getElementById('prediction-label').className = '';
             document.getElementById('confidence-label').textContent = '';
+            document.getElementById('error-message').style.display = 'none';
 
             var file = event.target.files[0];
+            var predictButton = document.getElementById('predict-button');
+            
             if (file) {
-                document.getElementById('audio-source').src = URL.createObjectURL(file);
-                document.getElementById('audio-player').style.display = 'block';
-                document.getElementById('audio-player').load();
+                var fileName = file.name.toLowerCase();
+                var fileExtension = fileName.split('.').pop(); // Get the file extension
+                var fileType = file.type;
+                
+                // Log file details
+                console.log(`File Name: ${fileName}`);
+                console.log(`File Type: ${fileType}`);
+                console.log(`File Extension: ${fileExtension}`);
+                
+                if (fileType === 'audio/wav' || fileType === 'audio/mpeg' || fileExtension === 'wav' || fileExtension === 'mp3') {
+                    document.getElementById('audio-source').src = URL.createObjectURL(file);
+                    document.getElementById('audio-player').style.display = 'block';
+                    document.getElementById('audio-player').load();
+                    
+                    predictButton.disabled = false; // Correctly enable the button
+                    document.getElementById('error-message').style.display = 'none';
+                } else {
+                    predictButton.disabled = true; // Correctly disable the button
+                    document.getElementById('audio-player').style.display = 'none';
+                    document.getElementById('error-message').style.display = 'block';
+                }
             }
         });
 
         document.getElementById('upload-form').addEventListener('submit', function(event) {
             event.preventDefault();
             document.getElementById('loading-spinner').style.display = 'block';
-            document.getElementById('progress-container').style.display = 'block';
-            const progressBar = document.getElementById('progress-bar');
-            const interval = setInterval(() => {
-                const width = parseFloat(progressBar.style.width) || 0;
-                if (width >= 100) {
-                    clearInterval(interval);
-                } else {
-                    progressBar.style.width = `${width + 5}%`;
-                }
-            }, 200);
 
             const formData = new FormData(this);
             fetch('/', {
@@ -73,12 +95,7 @@
             })
             .then(response => response.json())
             .then(data => {
-                clearInterval(interval);
-                progressBar.style.width = '100%';
-                setTimeout(() => {
-                    document.getElementById('progress-container').style.display = 'none';
-                    document.getElementById('loading-spinner').style.display = 'none';
-                }, 500);
+                document.getElementById('loading-spinner').style.display = 'none';
 
                 document.getElementById('prediction-result').style.display = 'block';
                 document.getElementById('prediction-label').textContent = data.prediction;
@@ -91,12 +108,7 @@
                 }
             })
             .catch(error => {
-                clearInterval(interval);
-                progressBar.style.width = '100%';
-                setTimeout(() => {
-                    document.getElementById('progress-container').style.display = 'none';
-                    document.getElementById('loading-spinner').style.display = 'none';
-                }, 500);
+                document.getElementById('loading-spinner').style.display = 'none';
                 console.error('Error:', error);
                 document.getElementById('prediction-result').style.display = 'block';
                 document.getElementById('prediction-label').textContent = 'Error';
