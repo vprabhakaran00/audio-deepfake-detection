@@ -318,3 +318,38 @@
 2024-07-25 21:04:48,539 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 21:04:48] "POST / HTTP/1.1" 200 -
 2024-07-25 21:05:02,133 - app.py - INFO - Prediction made successfully.
 2024-07-25 21:05:02,134 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 21:05:02] "POST / HTTP/1.1" 200 -
+2024-07-25 21:07:03,898 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-07-25 21:07:04,157 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-07-25 21:07:10,778 - app.py - INFO - Model loaded successfully at startup
+2024-07-25 21:07:10,785 - _internal.py - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2024-07-25 21:07:10,786 - _internal.py - INFO - [33mPress CTRL+C to quit[0m
+2024-07-25 21:07:16,478 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 21:07:16] "GET / HTTP/1.1" 200 -
+2024-07-25 21:07:16,708 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 21:07:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-07-25 21:07:34,964 - app.py - INFO - Prediction made successfully.
+2024-07-25 21:07:34,965 - _internal.py - INFO - 127.0.0.1 - - [25/Jul/2024 21:07:34] "POST / HTTP/1.1" 200 -
+2024-08-02 13:08:24,938 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-08-02 13:08:25,256 - module_wrapper.py - WARNING - From D:\Projects\DeepFake Voice Recognition\audio-deepfake-detection\venv\lib\site-packages\keras\src\layers\normalization\batch_normalization.py:979: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+2024-08-02 13:08:31,931 - app.py - INFO - Model loaded successfully at startup
+2024-08-02 13:08:31,954 - _internal.py - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2024-08-02 13:08:31,954 - _internal.py - INFO - [33mPress CTRL+C to quit[0m
+2024-08-02 13:08:52,101 - _internal.py - INFO - 127.0.0.1 - - [02/Aug/2024 13:08:52] "GET / HTTP/1.1" 200 -
+2024-08-02 13:08:52,300 - _internal.py - INFO - 127.0.0.1 - - [02/Aug/2024 13:08:52] "GET /static/styles.css HTTP/1.1" 200 -
+2024-08-02 13:08:52,341 - _internal.py - INFO - 127.0.0.1 - - [02/Aug/2024 13:08:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-08-02 13:09:04,080 - app.py - INFO - Prediction made successfully.
+2024-08-02 13:09:04,081 - _internal.py - INFO - 127.0.0.1 - - [02/Aug/2024 13:09:04] "POST / HTTP/1.1" 200 -
+2024-08-02 13:09:11,460 - app.py - INFO - Prediction made successfully.
+2024-08-02 13:09:11,460 - _internal.py - INFO - 127.0.0.1 - - [02/Aug/2024 13:09:11] "POST / HTTP/1.1" 200 -
+2024-08-02 13:09:17,849 - app.py - INFO - Prediction made successfully.
+2024-08-02 13:09:17,850 - _internal.py - INFO - 127.0.0.1 - - [02/Aug/2024 13:09:17] "POST / HTTP/1.1" 200 -
+2024-08-02 13:09:24,243 - app.py - INFO - Prediction made successfully.
+2024-08-02 13:09:24,244 - _internal.py - INFO - 127.0.0.1 - - [02/Aug/2024 13:09:24] "POST / HTTP/1.1" 200 -
+2024-08-02 13:09:29,607 - app.py - INFO - Prediction made successfully.
+2024-08-02 13:09:29,608 - _internal.py - INFO - 127.0.0.1 - - [02/Aug/2024 13:09:29] "POST / HTTP/1.1" 200 -
+2024-08-02 13:09:32,215 - app.py - INFO - Prediction made successfully.
+2024-08-02 13:09:32,216 - _internal.py - INFO - 127.0.0.1 - - [02/Aug/2024 13:09:32] "POST / HTTP/1.1" 200 -
