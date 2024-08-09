@@ -145,3 +145,40 @@ dvc dag
 ```
 
 This will generate a graph showing the flow of data through the pipeline, helping you to understand the structure and dependencies of the pipeline.
+
+## Dockerization
+### Building the Docker Image
+```bash
+docker build -t deepfake-detection-app .
+```
+
+### Running the Docker Container
+```bash
+docker run -p 5000:5000 deepfake-detection-app
+```
+
+The application will be available at `http://localhost:5000`.
+
+### Dockerizing for Azure
+
+1. Create an Azure Container Registry.
+2. Tag your Docker image:
+```bash
+docker tag deepfake-detection-app:latest <azure-registry-name>.azurecr.io/deepfake-detection-app:latest
+```
+3. Push the Docker image to Azure:
+```bash
+docker push <azure-registry-name>.azurecr.io/deepfake-detection-app:latest
+```
+
+## Continuous Integration and Deployment
+
+This project uses GitHub Actions for CI/CD. The CI/CD pipeline is defined in `.github/workflows/` directory in a `.yaml` file created through Azure.
+
+## Contributing
+
+Contributions are welcome! Please fork this repository, create a new branch, and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/vprabhakaran00/audio-deepfake-detection?tab=MIT-1-ov-file#) file for details.
