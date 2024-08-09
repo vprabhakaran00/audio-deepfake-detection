@@ -1,5 +1,4 @@
 tensorflow==2.15
-tensorflow-io
 imbalanced-learn
 librosa
 pandas
@@ -7,9 +6,7 @@ numpy
 scikit-learn
 notebook
 matplotlib
-seaborn
 dvc
-joblib
 python-box
 pyYAML
 types-PyYAML

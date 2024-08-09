@@ -1,0 +1,6 @@
+/artifacts/*
+/logs
+/research
+/venv
+/.dvc
+!/artifacts/model_training
