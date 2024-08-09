@@ -1,6 +1,6 @@
 # Audio Deepfake Detection App
 
-This project is an audio file deepfake detection application built using Flask, Python, and a Convolutional Neural Network (CNN). The application allows users to upload `.mp3` or `.wav` audio files and receive predictions based on the neural network.
+This project is an audio deepfake detection application built using Flask, Python, and a Convolutional Neural Network (CNN). The application allows users to upload `.mp3` or `.wav` audio files and receive predictions based on the neural network.
 
 ## Table of Contents
 
